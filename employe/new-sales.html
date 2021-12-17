@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Acara - Ticketing Bootstrap Admin Dashboard</title>
-	<link rel="stylesheet" href="/complaints.css">
+    <title>Tectignis-AMC New Sales Emp</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
 	<link rel="stylesheet" href="./vendor/chartist/css/chartist.min.css">
@@ -15,9 +14,6 @@
     <link href="./css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -43,11 +39,11 @@
         <!--**********************************
             Nav header start
         ***********************************-->
-		<div class="nav-header">
-			<a href="index.html" class="brand-logo">
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
                 <!-- <img class="logo-abbr" src="./images/logo.png" alt=""> -->
-                <!-- <img class="logo-compact" src="/acaraadmin-10/Acara-v1.0-1-January-2021/xhtml/images/logo12.png" alt=""> -->
-                <img class="brand-title" src="./images/tectiginis.jpg"  style="width: 255px;  height: 100px;" alt="Tectignis IT Solutions">
+                <img class="logo-compact" src="./images/logo-text.png" alt="">
+                <img class="brand-title" src="./images/tect.png" alt="">
             </a>
 
             <div class="nav-control">
@@ -81,7 +77,7 @@
 					<div class="tab-pane fade active show" id="chat" role="tabpanel">
 						<div class="card mb-sm-3 mb-md-0 contacts_card dz-chat-user-box">
 							<div class="card-header chat-list-header text-center">
-								<a href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect fill="#000000" x="4" y="11" width="16" height="2" rx="1"/><rect fill="#000000" opacity="0.3" transform="translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) " x="4" y="11" width="16" height="2" rx="1"/></g></svg></a>
+								<a href="javascript:void(0)"><i class="bi bi-chat-left-dots"></i></a>
 								<div>
 									<h6 class="mb-1">Chat List</h6>
 									<p class="mb-0">Show All</p>
@@ -571,19 +567,21 @@
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
                             <div class="dashboard_bar">
-							Complaints
+								New Sales
                             </div>
                         </div>
                         <ul class="navbar-nav header-right">
-							<li class="nav-item">
-								
-							</li>
+							<!-- <li class="nav-item">
+								<div class="input-group search-area d-xl-inline-flex d-none">
+									<input type="text" class="form-control" placeholder="Search here...">
+									<div class="input-group-append">
+										<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
+									</div>
+								</div>
+							</li> -->
 							<li class="nav-item dropdown notification_dropdown">
                                 <a class="nav-link  ai-icon" href="javascript:void(0)" role="button" data-toggle="dropdown">
-									<i class="bi bi-bell"></i>
-                                    <!-- <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.8333 5.91732V3.49998C12.8333 2.85598 13.356 2.33331 14 2.33331C14.6428 2.33331 15.1667 2.85598 15.1667 3.49998V5.91732C16.9003 6.16698 18.5208 6.97198 19.7738 8.22498C21.3057 9.75681 22.1667 11.8346 22.1667 14V18.3913L23.1105 20.279C23.562 21.1831 23.5142 22.2565 22.9822 23.1163C22.4513 23.9761 21.5122 24.5 20.5018 24.5H15.1667C15.1667 25.144 14.6428 25.6666 14 25.6666C13.356 25.6666 12.8333 25.144 12.8333 24.5H7.49817C6.48667 24.5 5.54752 23.9761 5.01669 23.1163C4.48469 22.2565 4.43684 21.1831 4.88951 20.279L5.83333 18.3913V14C5.83333 11.8346 6.69319 9.75681 8.22502 8.22498C9.47919 6.97198 11.0985 6.16698 12.8333 5.91732ZM14 8.16664C12.4518 8.16664 10.969 8.78148 9.87469 9.87581C8.78035 10.969 8.16666 12.453 8.16666 14V18.6666C8.16666 18.8475 8.12351 19.026 8.04301 19.1881C8.04301 19.1881 7.52384 20.2265 6.9755 21.322C6.88567 21.5028 6.89501 21.7186 7.00117 21.8901C7.10734 22.0616 7.29517 22.1666 7.49817 22.1666H20.5018C20.7037 22.1666 20.8915 22.0616 20.9977 21.8901C21.1038 21.7186 21.1132 21.5028 21.0234 21.322C20.475 20.2265 19.9558 19.1881 19.9558 19.1881C19.8753 19.026 19.8333 18.8475 19.8333 18.6666V14C19.8333 12.453 19.2185 10.969 18.1242 9.87581C17.0298 8.78148 15.547 8.16664 14 8.16664Z" fill="#FE634E"/>
-									</svg> -->
+                                    <i class="bi bi-bell"></i>
 									<div class="pulse-css"></div>
                                 </a>
                                 <div class="dropdown-menu rounded dropdown-menu-right">
@@ -661,11 +659,8 @@
                                 </div>
                             </li>
 							<li class="nav-item dropdown notification_dropdown">
-								<a class="nav-link bell bell-link" href="javascript:void(0)">
-									<i class="bi bi-chat-left-dots"></i>
-                                    <!-- <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M25.6666 8.16666C25.6666 5.5895 23.5771 3.5 21 3.5C17.1161 3.5 10.8838 3.5 6.99998 3.5C4.42281 3.5 2.33331 5.5895 2.33331 8.16666V23.3333C2.33331 23.8058 2.61798 24.2305 3.05315 24.4113C3.48948 24.5922 3.99115 24.4918 4.32481 24.1582C4.32481 24.1582 6.59281 21.8902 7.96714 20.517C8.40464 20.0795 8.99733 19.8333 9.61683 19.8333H21C23.5771 19.8333 25.6666 17.7438 25.6666 15.1667V8.16666ZM23.3333 8.16666C23.3333 6.87866 22.2891 5.83333 21 5.83333C17.1161 5.83333 10.8838 5.83333 6.99998 5.83333C5.71198 5.83333 4.66665 6.87866 4.66665 8.16666V20.517L6.31631 18.8673C7.19132 17.9923 8.37899 17.5 9.61683 17.5H21C22.2891 17.5 23.3333 16.4558 23.3333 15.1667V8.16666ZM8.16665 15.1667H17.5C18.144 15.1667 18.6666 14.644 18.6666 14C18.6666 13.356 18.144 12.8333 17.5 12.8333H8.16665C7.52265 12.8333 6.99998 13.356 6.99998 14C6.99998 14.644 7.52265 15.1667 8.16665 15.1667ZM8.16665 10.5H19.8333C20.4773 10.5 21 9.97733 21 9.33333C21 8.68933 20.4773 8.16666 19.8333 8.16666H8.16665C7.52265 8.16666 6.99998 8.68933 6.99998 9.33333C6.99998 9.97733 7.52265 10.5 8.16665 10.5Z" fill="#FE634E"/>
-									</svg> -->
+                                <a class="nav-link bell bell-link" href="javascript:void(0)">
+                                    <i class="bi bi-chat-left-dots"></i>
 									<div class="pulse-css"></div>
                                 </a>
 							</li>
@@ -700,60 +695,37 @@
         <!--**********************************
             Header end ti-comment-alt
         ***********************************-->
-            <!--**********************************
+
+        <!--**********************************
             Sidebar start
         ***********************************-->
-        <div class="deznav">
+		<div class="deznav">
             <div class="deznav-scroll">
 				<a href="javascript:void(0)" class="add-menu-sidebar" data-toggle="modal" data-target="#addOrderModalside" >+ New Event</a>
 				<ul class="metismenu" id="menu">
-                    <li><!-- <a class="" href="javascript:void()" aria-expanded="false"> -->
-						<a class="" href="index.html">
+                    <li><a class="" href="index.html" aria-expanded="false">
 							<i class="flaticon-381-networking"></i>
 							<span class="nav-text">Dashboard</span>
 						</a>
-                        <!-- <ul aria-expanded="false"> 
+                        <!-- <ul aria-expanded="false">
 							<li><a href="index.html">Dashboard</a></li>
 							<li><a href="event.html">Event</a></li>
 							<li><a href="event-detail.html">Event Detail</a></li>
 							<li><a href="customers.html">Customers</a></li>
 							<li><a href="analytics.html">Analytics</a></li>
 							<li><a href="reviews.html">Reviews</a></li>
-						 </ul> -->
-						
+						</ul> -->
                     </li>
-                    <li><a class="" href="purchase.html">
-						<i class="flaticon-381-television"></i>
-					<span class="nav-text">Purchase</span>
-					 </a>
-                        <!-- <ul aria-expanded="false"> 
-                            <li><a href="./app-profile.html">Profile</a></li>
-                            <li><a href="./post-details.html">Post Details</a></li>
-                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Email</a>
-                                <ul aria-expanded="false">
-                                    <li><a href="./email-compose.html">Compose</a></li>
-                                    <li><a href="./email-inbox.html">Inbox</a></li>
-                                    <li><a href="./email-read.html">Read</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./app-calender.html">Calendar</a></li>
-							<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Shop</a>
-                                <ul aria-expanded="false">
-                                    <li><a href="./ecom-product-grid.html">Product Grid</a></li>
-									<li><a href="./ecom-product-list.html">Product List</a></li>
-									<li><a href="./ecom-product-detail.html">Product Details</a></li>
-									<li><a href="./ecom-product-order.html">Order</a></li>
-									<li><a href="./ecom-checkout.html">Checkout</a></li>
-									<li><a href="./ecom-invoice.html">Invoice</a></li>
-									<li><a href="./ecom-customers.html">Customers</a></li>
-                                </ul>
-                            </li>
-                        </ul>-->
+                    <li><a class="" href="client.html" aria-expanded="false">
+							<i class="flaticon-381-television"></i>
+							<span class="nav-text">Client</span>
+						</a>
+                        
                     </li>
-                    <li><a class="" href="amc.html">
-						<i class="flaticon-381-controls-3"></i>
-					<span class="nav-text">A M C</span>
-					 </a>
+                    <li><a class="" href="quotation.html" aria-expanded="false">
+							<i class="flaticon-381-controls-3"></i>
+							<span class="nav-text">Quotation</span>
+						</a>
                         <!-- <ul aria-expanded="false">
                             <li><a href="./chart-flot.html">Flot</a></li>
                             <li><a href="./chart-morris.html">Morris</a></li>
@@ -763,11 +735,11 @@
                             <li><a href="./chart-peity.html">Peity</a></li>
                         </ul> -->
                     </li>
-                    <li><a class="" href="event.html">
-						<i class="flaticon-381-internet"></i>
-					<span class="nav-text">Complaints</span>
-					 </a>
-                        <!-- <ul aria-expanded="false"> 
+                    <li><a class="" href="sales.html" aria-expanded="false">
+							<i class="flaticon-381-internet"></i>
+							<span class="nav-text">Sales</span>
+						</a>
+                        <!-- <ul aria-expanded="false">
                             <li><a href="./ui-accordion.html">Accordion</a></li>
                             <li><a href="./ui-alert.html">Alert</a></li>
                             <li><a href="./ui-badge.html">Badge</a></li>
@@ -786,12 +758,13 @@
                             <li><a href="./ui-pagination.html">Pagination</a></li>
                             <li><a href="./ui-grid.html">Grid</a></li>
 
-                        </ul>-->
-                     <li><a class="" href="javascript:void()" aria-expanded="false"> 
+                        </ul> -->
+                    </li>
+                    <li><a class="" href="amc.html" aria-expanded="false">
 							<i class="flaticon-381-heart"></i>
-							<span class="nav-text">Services</span>
+							<span class="nav-text">AMC</span>
 						</a>
-                        <!-- <ul aria-expanded="false"> 
+                        <!-- <ul aria-expanded="false">
                             <li><a href="./uc-select2.html">Select 2</a></li>
                             <li><a href="./uc-nestable.html">Nestedable</a></li>
                             <li><a href="./uc-noui-slider.html">Noui Slider</a></li>
@@ -799,35 +772,35 @@
                             <li><a href="./uc-toastr.html">Toastr</a></li>
                             <li><a href="./map-jqvmap.html">Jqv Map</a></li>
                             <li><a href="./uc-lightgallery.html">Lightgallery</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
-                    <li><a href="widget-basic.html" class="ai-icon" aria-expanded="false">
+                    <li><a href="complaint.html" class="ai-icon" aria-expanded="false">
 							<i class="flaticon-381-settings-2"></i>
-							<span class="nav-text">Widget</span>
+							<span class="nav-text">Complaint</span>
 						</a>
 					</li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <li><a class="" href="service.html" aria-expanded="false">
 							<i class="flaticon-381-notepad"></i>
-							<span class="nav-text">Forms</span>
+							<span class="nav-text">Service</span>
 						</a>
-                        <ul aria-expanded="false">
+                        <!-- <ul aria-expanded="false">
                             <li><a href="./form-element.html">Form Elements</a></li>
                             <li><a href="./form-wizard.html">Wizard</a></li>
                             <li><a href="./form-editor-summernote.html">Summernote</a></li>
                             <li><a href="form-pickers.html">Pickers</a></li>
                             <li><a href="form-validation-jquery.html">Jquery Validate</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <!-- <li><a class="" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-network"></i>
-							<span class="nav-text">Table</span>
+							<span class="nav-text">Report</span>
 						</a>
-                        <ul aria-expanded="false">
+                        <!-- <ul aria-expanded="false">
                             <li><a href="table-bootstrap-basic.html">Bootstrap</a></li>
                             <li><a href="table-datatable-basic.html">Datatable</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                        </ul> -->
+                    <!-- </li> --> 
+                    <!-- <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-layer-1"></i>
 							<span class="nav-text">Pages</span>
 						</a>
@@ -845,12 +818,12 @@
                             </li>
                             <li><a href="./page-lock-screen.html">Lock Screen</a></li>
                         </ul>
-                    </li>-->
+                    </li> -->
                 </ul>
-				<!-- <div class="copyright"> -->
-					<!-- <p><strong>Acara Ticketing Dashboard</strong> © 2021 All Rights Reserved</p> -->
-					<!-- <p>Made with <span class="heart"></span> by DexignZone</p> -->
-				<!-- </div> -->
+				<!-- <div class="copyright">
+					<p><strong>Acara Ticketing Dashboard</strong> © 2021 All Rights Reserved</p>
+					<p>Made with <span class="heart"></span> by Tectignis IT Solutions</p>
+				</div> -->
 			</div>
         </div>
         <!--**********************************
@@ -863,25 +836,476 @@
         <div class="content-body">
             <!-- row -->
 			<div class="container-fluid">
-				<form>
+				<!-- Add Order -->
 				
-					<h2>Complaint Form</h2>
-			
-				<div class="mnj">
-				Complaint Date & Time :<input type="date" placeholder="Complaint Date"><input type="time" placeholder="Date"><br>
-                Complaint Type :<select class="jkl" placeholder="Select">
-					<option value="Select"></option>
-				<option value="Desktop">Desktop</option>
-			    <option value="Laptop">Laptop</option>
-			     <option value="CCTV">CCTV</option> 
-				<option value="Routers">Routers</option>
-				<option value="Routers">Routers</option></select><br>
-				<p class="wwe">Description :</p><textarea class="www" placeholder="Write here..."></textarea><br>
-				Contact Name :<input type="text" placeholder="&nbsp;&nbsp;Name"><br>
-				Contact No :<input type="number" placeholder="&nbsp;&nbsp;0123-456-789"><br>
-				<input type="submit">
-			</div>
-			</div>
+				<!-- <div class="modal fade" id="addOrderModalside">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Add Event</h5>
+								<button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<form>
+									<div class="form-group">
+										<label class="text-black font-w500">Event Name</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="form-group">
+										<label class="text-black font-w500">Event Date</label>
+										<input type="date" class="form-control">
+									</div>
+									<div class="form-group">
+										<label class="text-black font-w500">Description</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="form-group">
+										<button type="button" class="btn btn-primary">Create</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<!-- <div class="d-flex flex-wrap mb-2 align-items-center justify-content-between"> -->
+					<!-- <div class="mb-3 mr-3">
+						<h6 class="fs-16 text-black font-w600 mb-0">568 Total Orders</h6>
+						<span class="fs-14">Based your preferences</span>
+					</div> -->
+					<!-- <div class="event-tabs mb-3 mr-3">
+						<ul class="nav nav-tabs" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" data-toggle="tab" href="#All" role="tab" aria-selected="true">
+									All
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#Sold" role="tab" aria-selected="false">
+									Sold
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#Refunded" role="tab" aria-selected="false">
+									Refunded
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#Canceled" role="tab" aria-selected="false">
+									Canceled
+								</a>
+							</li>
+						</ul>
+					</div> -->
+					<!-- <div class="d-flex mb-3">
+						<select class="form-control style-2 default-select mr-3">
+							<option>Newest</option>
+							<option>Monthly</option>
+							<option>Weekly</option>
+						</select>
+						<a href="javascript:void(0)" class="btn btn-primary text-nowrap"><i class="fa fa-file-text scale5 mr-3" aria-hidden="true"></i>Generate Report</a>
+					</div> -->
+				<!-- </div> -->
+				<div class="row">
+					<div class="col-md-6">
+				 	<a href="new-quotation.html">
+					<!-- <button class="favorite styled"
+         			type="button">
+    				Add New Quotation
+					</button> -->
+					</a>
+					</div>
+						<div class="col-md-3 d-flex justify-content-end qwertyu">
+					<li class="nav-item search">
+						<div class="input-group cvbn">
+							<input type="text" class="form-control cvbn" placeholder="Search here...">
+							<div class="input-group-append">
+								<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
+							</div>
+							</div>
+						</div>
+					</li>
+
+					
+				</div>
+				</div>
+                    <div class="col-xl-12">
+						<div class="tab-content">
+							<div id="All" class="tab-pane active fade show">
+								<div class="table-responsive">
+									
+                                    <table id="example2" class="table card-table display dataTablesCard">
+										<thead>
+											
+												<th>INVOICE NO.</th>
+                                                <th>INVOICE DATE</th>
+                                                <th>CUSTOMER</th>
+                                                <th>TOTAL</th>
+												<th>PAID</th>
+                                                <th>DUE</th>
+                                                <th>ACTION</th>
+                                               
+                                            </tr>
+                                        </thead>
+										<tbody>
+											
+											<tr>
+												<td>123454311</td>
+												<td>11/11/1111</td>
+												<!-- <td>04/08/2020<br>12:34 AM</td> -->
+												<td>QWERTY</td>
+												<td>111/-</td>
+												<td>111/-</td>
+												<td>0</td>
+												
+												<td>
+													<div class="bt2">
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-cash ccc"></i>  Enter Payment</button>
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-file-earmark-pdf ccc"></i>  Generate PDF</button>
+														<button type="button" class="btn btn-primary kl" style="
+														height: 41px; width: 87px;"><i class="bi bi-eye ccc"></i>  View</button>
+														<button type="button" class="btn btn-secondary kl gh"  style="
+														width: 99px;"><i class="bi bi-pencil ccc"></i>  Edit</button>
+														
+													  </div>
+												</td>
+												<!-- <td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$65,22</a></td> -->
+											</tr>
+											<tr>
+												<td>123454311</td>
+												<td>11/11/1111</td>
+												<!-- <td>04/08/2020<br>12:34 AM</td> -->
+												<td>QWERTY</td>
+												<td>111/-</td>
+												<td>111/-</td>
+												<td>0</td>
+												
+												<td>
+													<div class="bt2">
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-cash ccc"></i>  Enter Payment</button>
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-file-earmark-pdf ccc"></i>  Generate PDF</button>
+														<button type="button" class="btn btn-primary kl" style="
+														height: 41px; width: 87px;"><i class="bi bi-eye ccc"></i>  View</button>
+														<button type="button" class="btn btn-secondary kl gh"  style="
+														width: 99px;"><i class="bi bi-pencil ccc"></i>  Edit</button>
+														
+													  </div>
+												</td>
+												<!-- <td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$65,22</a></td> -->
+											</tr>
+											<tr>
+												<td>123454311</td>
+												<td>11/11/1111</td>
+												<!-- <td>04/08/2020<br>12:34 AM</td> -->
+												<td>QWERTY</td>
+												<td>111/-</td>
+												<td>111/-</td>
+												<td>0</td>
+												
+												<td>
+													<div class="bt2">
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-cash ccc"></i>  Enter Payment</button>
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-file-earmark-pdf ccc"></i>  Generate PDF</button>
+														<button type="button" class="btn btn-primary kl" style="
+														height: 41px; width: 87px;"><i class="bi bi-eye ccc"></i>  View</button>
+														<button type="button" class="btn btn-secondary kl gh"  style="
+														width: 99px;"><i class="bi bi-pencil ccc"></i>  Edit</button>
+														
+													  </div>
+												</td>
+												<!-- <td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$65,22</a></td> -->
+											</tr>
+											<tr>
+												<td>123454311</td>
+												<td>11/11/1111</td>
+												<!-- <td>04/08/2020<br>12:34 AM</td> -->
+												<td>QWERTY</td>
+												<td>111/-</td>
+												<td>111/-</td>
+												<td>0</td>
+												
+												<td>
+													<div class="bt2">
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-cash ccc"></i>  Enter Payment</button>
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-file-earmark-pdf ccc"></i>  Generate PDF</button>
+														<button type="button" class="btn btn-primary kl" style="
+														height: 41px; width: 87px;"><i class="bi bi-eye ccc"></i>  View</button>
+														<button type="button" class="btn btn-secondary kl gh"  style="
+														width: 99px;"><i class="bi bi-pencil ccc"></i>  Edit</button>
+														
+													  </div>
+												</td>
+												<!-- <td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$65,22</a></td> -->
+											</tr>
+											<tr>
+												<td>123454311</td>
+												<td>11/11/1111</td>
+												<!-- <td>04/08/2020<br>12:34 AM</td> -->
+												<td>QWERTY</td>
+												<td>111/-</td>
+												<td>111/-</td>
+												<td>0</td>
+												
+												<td>
+													<div class="bt2">
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-cash ccc"></i>  Enter Payment</button>
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-file-earmark-pdf ccc"></i>  Generate PDF</button>
+														<button type="button" class="btn btn-primary kl" style="
+														height: 41px; width: 87px;"><i class="bi bi-eye ccc"></i>  View</button>
+														<button type="button" class="btn btn-secondary kl gh"  style="
+														width: 99px;"><i class="bi bi-pencil ccc"></i>  Edit</button>
+														
+													  </div>
+												</td>
+												<!-- <td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$65,22</a></td> -->
+											</tr>
+											<tr>
+												<td>123454311</td>
+												<td>11/11/1111</td>
+												<!-- <td>04/08/2020<br>12:34 AM</td> -->
+												<td>QWERTY</td>
+												<td>111/-</td>
+												<td>111/-</td>
+												<td>0</td>
+												
+												<td>
+													<div class="bt2">
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-cash ccc"></i>  Enter Payment</button>
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-file-earmark-pdf ccc"></i>  Generate PDF</button>
+														<button type="button" class="btn btn-primary kl" style="
+														height: 41px; width: 87px;"><i class="bi bi-eye ccc"></i>  View</button>
+														<button type="button" class="btn btn-secondary kl gh"  style="
+														width: 99px;"><i class="bi bi-pencil ccc"></i>  Edit</button>
+														
+													  </div>
+												</td>
+												<!-- <td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$65,22</a></td> -->
+											</tr>
+											<tr>
+												<td>123454311</td>
+												<td>11/11/1111</td>
+												<!-- <td>04/08/2020<br>12:34 AM</td> -->
+												<td>QWERTY</td>
+												<td>111/-</td>
+												<td>111/-</td>
+												<td>0</td>
+												
+												<td>
+													<div class="bt2">
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-cash ccc"></i>  Enter Payment</button>
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-file-earmark-pdf ccc"></i>  Generate PDF</button>
+														<button type="button" class="btn btn-primary kl" style="
+														height: 41px; width: 87px;"><i class="bi bi-eye ccc"></i>  View</button>
+														<button type="button" class="btn btn-secondary kl gh"  style="
+														width: 99px;"><i class="bi bi-pencil ccc"></i>  Edit</button>
+														
+													  </div>
+												</td>
+												<!-- <td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$65,22</a></td> -->
+											</tr>
+											<tr>
+												<td>123454311</td>
+												<td>11/11/1111</td>
+												<!-- <td>04/08/2020<br>12:34 AM</td> -->
+												<td>QWERTY</td>
+												<td>111/-</td>
+												<td>111/-</td>
+												<td>0</td>
+												
+												<td>
+													<div class="bt2">
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-cash ccc"></i>  Enter Payment</button>
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-file-earmark-pdf ccc"></i>  Generate PDF</button>
+														<button type="button" class="btn btn-primary kl" style="
+														height: 41px; width: 87px;"><i class="bi bi-eye ccc"></i>  View</button>
+														<button type="button" class="btn btn-secondary kl gh"  style="
+														width: 99px;"><i class="bi bi-pencil ccc"></i>  Edit</button>
+														
+													  </div>
+												</td>
+												<!-- <td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$65,22</a></td> -->
+											</tr>
+											<tr>
+												<td>123454311</td>
+												<td>11/11/1111</td>
+												<!-- <td>04/08/2020<br>12:34 AM</td> -->
+												<td>QWERTY</td>
+												<td>111/-</td>
+												<td>111/-</td>
+												<td>0</td>
+												
+												<td>
+													<div class="bt2">
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-cash ccc"></i>  Enter Payment</button>
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-file-earmark-pdf ccc"></i>  Generate PDF</button>
+														<button type="button" class="btn btn-primary kl" style="
+														height: 41px; width: 87px;"><i class="bi bi-eye ccc"></i>  View</button>
+														<button type="button" class="btn btn-secondary kl gh"  style="
+														width: 99px;"><i class="bi bi-pencil ccc"></i>  Edit</button>
+														
+													  </div>
+												</td>
+												<!-- <td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$65,22</a></td> -->
+											</tr>
+											<tr>
+												<td>123454311</td>
+												<td>11/11/1111</td>
+												<!-- <td>04/08/2020<br>12:34 AM</td> -->
+												<td>QWERTY</td>
+												<td>111/-</td>
+												<td>111/-</td>
+												<td>0</td>
+												
+												<td>
+													<div class="bt2">
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-cash ccc"></i>  Enter Payment</button>
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-file-earmark-pdf ccc"></i>  Generate PDF</button>
+														<button type="button" class="btn btn-primary kl" style="
+														height: 41px; width: 87px;"><i class="bi bi-eye ccc"></i>  View</button>
+														<button type="button" class="btn btn-secondary kl gh"  style="
+														width: 99px;"><i class="bi bi-pencil ccc"></i>  Edit</button>
+														
+													  </div>
+												</td>
+												<!-- <td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$65,22</a></td> -->
+											</tr>
+											<tr>
+												<td>123454311</td>
+												<td>11/11/1111</td>
+												<!-- <td>04/08/2020<br>12:34 AM</td> -->
+												<td>QWERTY</td>
+												<td>111/-</td>
+												<td>111/-</td>
+												<td>0</td>
+												
+												<td>
+													<div class="bt2">
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-cash ccc"></i>  Enter Payment</button>
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-file-earmark-pdf ccc"></i>  Generate PDF</button>
+														<button type="button" class="btn btn-primary kl" style="
+														height: 41px; width: 87px;"><i class="bi bi-eye ccc"></i>  View</button>
+														<button type="button" class="btn btn-secondary kl gh"  style="
+														width: 99px;"><i class="bi bi-pencil ccc"></i>  Edit</button>
+														
+													  </div>
+												</td>
+												<!-- <td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$65,22</a></td> -->
+											</tr>
+											<tr>
+												<td>123454311</td>
+												<td>11/11/1111</td>
+												<!-- <td>04/08/2020<br>12:34 AM</td> -->
+												<td>QWERTY</td>
+												<td>111/-</td>
+												<td>111/-</td>
+												<td>0</td>
+												
+												<td>
+													<div class="bt2">
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-cash ccc"></i>  Enter Payment</button>
+														<button type="button" class="btn btn-success kl hj"  style="
+														width: 128px;
+														padding: 12px;"><i class="bi bi-file-earmark-pdf ccc"></i>  Generate PDF</button>
+														<button type="button" class="btn btn-primary kl" style="
+														height: 41px; width: 87px;"><i class="bi bi-eye ccc"></i>  View</button>
+														<button type="button" class="btn btn-secondary kl gh"  style="
+														width: 99px;"><i class="bi bi-pencil ccc"></i>  Edit</button>
+														
+													  </div>
+												</td>
+												<!-- <td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$65,22</a></td> -->
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+            </div>
         </div>
         <!--**********************************
             Content body end
@@ -892,7 +1316,7 @@
         ***********************************-->
         <div class="footer">
             <div class="copyright">
-                <p>Copyright © 2020 | Designed &amp; Developed by <a href="https://tectignis.in/" target="_blank">Tectignis IT Solutions</a></p>
+                <p>Copyright © 2020 | Designed &amp; Developed by <a href="https://tectignis.in/" target="_blank">Tectignis IT Solutions</a> </p>
             </div>
         </div>
         <!--**********************************

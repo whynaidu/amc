@@ -31049,14 +31049,17 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 }
 .mm{
   height:40px;
-  width: 90px;
-  border-radius: 10px;
+  width: 70px;
+  border-radius: 20px;
+  background:#e5d1f0;
+  
 }
 .mm:hover{
   height:40px;
-  width: 90px;
-  background:#bfbfbf;
-  border-radius: 10px;
+  width: 70px;
+  background:#510cc1;
+  border-radius: 20px;
+  color:white;
 }
 .mnmn{
   height:40px;
@@ -31113,8 +31116,9 @@ button.nn{
 .bi-eye{
   vertical-align: -8px;
   font-size: 25px;
-   margin-left:35px
-}
+   margin-left:22px;
+ }
+ 
 .bi-download{
   vertical-align: -8px;
   font-size: 15px;
