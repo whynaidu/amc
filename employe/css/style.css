@@ -31158,3 +31158,41 @@ border:2px solid #510cc1;
   background: #510cc1;
   border: 1px solid #510cc1
 }
+.cvbn{
+  width: 450px;
+  padding-left: 50px; 
+}
+.qwertyu{
+  width: 1100px
+}
+.cl{
+  border: 0px;
+  font-size: 10px;
+  background: #efd3f2;
+}
+.cl:hover{
+  background: #510cc1;
+}
+.asd{
+  height:40px;
+  width: 70px;
+  border-radius: 20px;
+  background:#e5d1f0;
+  color: black;
+}
+.asd:hover{
+  height:40px;
+  width: 70px;
+  background:#510cc1;
+  border-radius: 20px;
+  color: white;
+}
+.dfg{
+  vertical-align: -8px;
+  font-size: 25px;
+   margin-left:22px;
+   /* color: black; */
+}
+.dfg:hover{
+  /* color: white; */
+}
