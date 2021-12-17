@@ -14,8 +14,6 @@
     <link href="./css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-        
-
 </head>
 <body>
 
@@ -569,7 +567,7 @@
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
                             <div class="dashboard_bar">
-							DISCOUNT LIST
+							COMPLAINTS
                             </div>
                         </div>
                         <ul class="navbar-nav header-right">
@@ -702,7 +700,7 @@
         <!--**********************************
             Sidebar start
         ***********************************-->
-           <div class="deznav">
+          <div class="deznav">
             <div class="deznav-scroll">
 				<a href="javascript:void(0)" class="add-menu-sidebar" data-toggle="modal" data-target="#addOrderModalside" >+ New Event</a>
 				<ul class="metismenu" id="menu">
@@ -844,53 +842,49 @@
 					<div class="col-md-6">
 					<button class="favorite styled"
          			type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    				Add Discount
+    				Add New Complaints
 					</button>
 
 <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-  <div class="modal-dialog">
-    <div class="modal-content">
+<div class="modal fade text center" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content ">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Add Discount</h5>
+        <h5 class="modal-title" id="staticBackdropLabel">Add Complaints</h5>
  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"  style="
     background: transparent;
     border: none;
     margin: -35px;
-"><i class="bi bi-x"></i></button>      </div>
+"><i class="bi bi-x"></i></button></div>
       <div class="modal-body">
-        <form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label"> Name</label>
+		  <form >
+        <div class="container">
+			<div class="row">
+  <div class="mb-3 col-4">
+    <label for="exampleInputEmail1" class="form-label">User Role</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+    <label for="exampleInputEmail1" class="form-label">First Name</label>
     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Discount Type</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  <div class="mb-3 col-4">
+    <label for="exampleInputPassword1" class="form-label">Last Name</label>
+    <input type="text" class="form-control" id="exampleInputPassword1">
   </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Discount Value</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+  <div class="mb-3 col-4">
+    <label for="exampleInputPassword1" class="form-label">Email</label>
+    <input type="email" class="form-control" id="exampleInputPassword1">
   </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Valid From</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Valid To</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Description</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
+
+ </div>
 
 </form>
       </div>
+      </div>
+	
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save Discount<button>
+        <button type="button" class="btn bt" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn bt">Save user</button>
       </div>
     </div>
   </div>
@@ -912,7 +906,7 @@
 
 					
 				</div>
-			<div class="row">
+				<div class="row">
 					<div class="col-xl-12">
 						<div class="tab-content">
 							<div id="All" class="tab-pane active fade show">
@@ -920,132 +914,171 @@
                                     <table id="example2" class="table card-table display dataTablesCard">
 										<thead>
                                             <tr>
-                                             
-                                                <th> Name</th>
-                                                <th>Discount Type</th>
-                                                <th>Discount Value</th>
-                                                <th>Valid From</th>
-                                                <th>Valid To</th>
-                                                <th>Description</th>
-                                                <th>Status</th>
+                                                <th>Order ID</th>
+                                                <th>Date</th>
+                                                <th>Event Name</th>
+                                                <th>Customer </th>
+                                                <th>Location</th>
+                                                <th>Sold Ticket</th>
+                                                <th>States</th>
+                                         
                                                 <th>Action</th>
-                                           
                                             </tr>
                                         </thead>
 										<tbody>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
-										<td><a href="javascript:void(0)" class="btn btn-primary btn-success">view</a></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-danger">delete</a></td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">Envato Authors Meetup<br>2020</span></td>
 												<td>Elisabeth Queen</td>
-											<td><a href="javascript:void(0)" class="btn btn-primary btn-success">view</a></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-danger">delete</a></td>
+												<td>Medan, Indonesia</td>
+												<td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">Great Big Fireworks at <br> Newyork City</span></td>
 												<td>David Bekam</td>
-											<td><a href="javascript:void(0)" class="btn btn-primary btn-success">view</a></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-danger">delete</a></td>
+												<td>Sydney, Australia</td>
+												<td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">Charity Fun Games at <br> Lapangan Merdeka</span></td>
 												<td>Andrew Stevano</td>
-											
-											
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-success">view</a></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-danger">delete</a></td>
+												<td>Jakarta, Indonesia</td>
+												<td>2 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-primary">REFUND</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">Indonesian Envato <br> Authors Fun Run </span></td>
 												<td>Cive Slauw</td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-success">view</a></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-danger">delete</a></td>
+												<td>Penang, Malaysia</td>
+												<td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Eddy Cusuma</td>
-											<td><a href="javascript:void(0)" class="btn btn-primary btn-success">view</a></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-danger">delete</a></td>
+												<td>Medan, Indonesia</td>
+												<td>3 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Frank Azire</td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-success">view</a></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-danger">delete</a></td>
+												<td>Bangkok, Thailand</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">REFUND</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-										
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
-											<td><a href="javascript:void(0)" class="btn btn-primary btn-success">view</a></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-danger">delete</a></td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-										
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Elisabeth Queen</td>
-											<td><a href="javascript:void(0)" class="btn btn-primary btn-success">view</a></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-danger">delete</a></td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-												
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Andrew Stevano</td>
-											<td><a href="javascript:void(0)" class="btn btn-primary btn-success">view</a></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-danger">delete</a></td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-success">view</a></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-danger">view</a></td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
-											<td><a href="javascript:void(0)" class="btn btn-primary btn-success">view</a></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-danger">view</a></td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-										
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
-											<td><a href="javascript:void(0)" class="btn btn-primary btn-success">view</a></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-danger">view</a></td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
-											<td><a href="javascript:void(0)" class="btn btn-primary btn-success">view</a></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-danger">view</a></td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 										</tbody>
 									</table>
@@ -1056,149 +1089,181 @@
                                     <table id="example3" class="table card-table display dataTablesCard">
 										<thead>
                                             <tr>
-                                            
+                                                <th>Order ID</th>
                                                 <th>Date</th>
                                                 <th>Event Name</th>
                                                 <th>Customer </th>
                                                 <th>Location</th>
+                                                <th>Sold Ticket</th>
+                                                <th>Status</th>
                                             
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
 										<tbody>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
 												<td>London, US</td>
-									
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
 												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">Envato Authors Meetup<br>2020</span></td>
 												<td>Elisabeth Queen</td>
 												<td>Medan, Indonesia</td>
-									
+												<td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
 												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">Great Big Fireworks at <br> Newyork City</span></td>
 												<td>David Bekam</td>
 												<td>Sydney, Australia</td>
-									
+												<td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
 												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">Charity Fun Games at <br> Lapangan Merdeka</span></td>
 												<td>Andrew Stevano</td>
 												<td>Jakarta, Indonesia</td>
-									
+												<td>2 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-primary">REFUND</strong></td>
 												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">Indonesian Envato <br> Authors Fun Run </span></td>
 												<td>Cive Slauw</td>
 												<td>Penang, Malaysia</td>
-										
+												<td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
 												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-										
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Eddy Cusuma</td>
 												<td>Medan, Indonesia</td>
-											
+												<td>3 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
 												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Frank Azire</td>
 												<td>Bangkok, Thailand</td>
-										
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">REFUND</strong></td>
 												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
 												<td>London, US</td>
-										
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
 												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Andrew Stevano</td>
 												<td>London, US</td>
-										
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
 												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
 												<td>London, US</td>
-									
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
 												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
 												<td>London, US</td>
-									
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
 												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-												
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
 												<td>London, US</td>
-									
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
 												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-										
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
 												<td>London, US</td>
-								
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
 												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Elisabeth Queen</td>
 												<td>London, US</td>
-						
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
 												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Andrew Stevano</td>
 												<td>London, US</td>
-								
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
 												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
 											</tr>
 										</tbody>
@@ -1210,150 +1275,180 @@
                                     <table id="example4" class="table card-table display dataTablesCard">
 										<thead>
                                             <tr>
-                                             
+                                                <th>Order ID</th>
                                                 <th>Date</th>
                                                 <th>Event Name</th>
                                                 <th>Customer </th>
                                                 <th>Location</th>
-                                         
-                                                <th>Action</th>
+                                               
+                                                <th>action</th>
                                             </tr>
                                         </thead>
 										<tbody>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Andrew Stevano</td>
 												<td>London, US</td>
-										
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
 												<td>London, US</td>
-											
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
 											</tr>
 											<tr>
-												
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
 												<td>London, US</td>
-							
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
 												<td>London, US</td>
-											
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
 												<td>London, US</td>
-									
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
 												<td>London, US</td>
-										
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">Envato Authors Meetup<br>2020</span></td>
 												<td>Elisabeth Queen</td>
 												<td>Medan, Indonesia</td>
-										
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$536,00</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">Great Big Fireworks at <br> Newyork City</span></td>
 												<td>David Bekam</td>
 												<td>Sydney, Australia</td>
-										
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$65,22</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">Charity Fun Games at <br> Lapangan Merdeka</span></td>
 												<td>Andrew Stevano</td>
 												<td>Jakarta, Indonesia</td>
-								
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>2 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-primary">REFUND</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$124,55</a></td>
 											</tr>
 											<tr>
-										
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">Indonesian Envato <br> Authors Fun Run </span></td>
 												<td>Cive Slauw</td>
 												<td>Penang, Malaysia</td>
-										
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$536,00</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Eddy Cusuma</td>
 												<td>Medan, Indonesia</td>
-									
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>3 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$44,00</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Frank Azire</td>
 												<td>Bangkok, Thailand</td>
-									
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">REFUND</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$51,50</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
 												<td>London, US</td>
-								
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Elisabeth Queen</td>
 												<td>London, US</td>
-									>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Andrew Stevano</td>
 												<td>London, US</td>
-								
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
 											</tr>
 										</tbody>
 									</table>
@@ -1364,150 +1459,182 @@
                                     <table id="example5" class="table card-table display dataTablesCard">
 										<thead>
                                             <tr>
-                                              
+                                                <th>Order ID</th>
                                                 <th>Date</th>
                                                 <th>Event Name</th>
                                                 <th>Customer </th>
                                                 <th>Location</th>
-                                         
-                                                <th>Action</th>
+                                                <th>Sold Ticket</th>
+                                                <th>Available</th>
+                                                <th>Refund</th>
+                                                <th>Total Revenue</th>
                                             </tr>
                                         </thead>
 										<tbody>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
 												<td>London, US</td>
-									
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">Envato Authors Meetup<br>2020</span></td>
 												<td>Elisabeth Queen</td>
 												<td>Medan, Indonesia</td>
-								
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$536,00</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">Great Big Fireworks at <br> Newyork City</span></td>
 												<td>David Bekam</td>
 												<td>Sydney, Australia</td>
-									
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$65,22</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Andrew Stevano</td>
 												<td>London, US</td>
-										
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
 											</tr>
 											<tr>
-												
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
 												<td>London, US</td>
-											
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
 												<td>London, US</td>
-									
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
 												<td>London, US</td>
-									
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
 												<td>London, US</td>
-										
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">Charity Fun Games at <br> Lapangan Merdeka</span></td>
 												<td>Andrew Stevano</td>
 												<td>Jakarta, Indonesia</td>
-								
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>2 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-primary">REFUND</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$124,55</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">Indonesian Envato <br> Authors Fun Run </span></td>
 												<td>Cive Slauw</td>
 												<td>Penang, Malaysia</td>
-										
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$536,00</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Eddy Cusuma</td>
 												<td>Medan, Indonesia</td>
-											
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>3 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$44,00</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Frank Azire</td>
 												<td>Bangkok, Thailand</td>
-										
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">REFUND</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$51,50</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Bella Simatupang</td>
 												<td>London, US</td>
-											
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view/a></td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
 											</tr>
 											<tr>
-											
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Elisabeth Queen</td>
 												<td>London, US</td>
-											
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
 											</tr>
 											<tr>
-												
+												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
 												<td>Andrew Stevano</td>
 												<td>London, US</td>
-											
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
 											</tr>
 										</tbody>
 									</table>
@@ -1518,9 +1645,6 @@
 				</div>
             </div>
         </div>
-
-
-        
         <!--**********************************
             Content body end
         ***********************************-->
@@ -1530,7 +1654,7 @@
         ***********************************-->
         <div class="footer">
             <div class="copyright">
-                <p>Copyright © Designed &amp; Developed by <a href="http://dexignzone.com/" target="_blank">DexignZone</a> 2021</p>
+            <p>Copyright © Designed &amp; Developed by <a href="https://tectignis.in/" target="_blank">Tectignis IT Solutions</a> 2021</p>
             </div>
         </div>
         <!--**********************************
@@ -1603,7 +1727,6 @@
 			});
 		})(jQuery);
 	</script>
-    <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
