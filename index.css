@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+html,
+body{
+	height: 100%;
+	padding: 10px;
+	height: 100%;
+
+}
+
+.main-container{
+	width: 100%;
+	padding: 10px;
+	height: 600px;
+
+	
+}
+.content{
+	padding: 10px;
+
+	height: 379px;
+	
+	justify-content: center;
+	align-items: center;
+}
+.image{
+	padding:10px;
+	margin-top: 10px;
+	align-content:center; 
+	
+	height: 100px;
+	justify-content: center;
+	align-items: center;
+}
+.logo{
+	margin-left:450px;
+	height: 100px;
+}
+.buttons{
+	margin-left: 400px;
+	margin-top: 200px;
+}
+.btn{
+	margin:10px;
+}
