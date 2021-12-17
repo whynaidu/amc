@@ -2996,9 +2996,9 @@ input[type="button"].btn-block {
   .input-group > .custom-file {
     position: relative;
     flex: 1 1 auto;
-    width: 1%;
+    width: 1100px;
     min-width: 0;
-    margin-bottom: 0; }
+    margin-bottom: 0px; }
     .input-group > .form-control + .form-control,
     .input-group > .form-control + .custom-select,
     .input-group > .form-control + .custom-file,
@@ -12094,7 +12094,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   top: 0.625rem; }
 
 .content-body {
-  margin-left: 9.563rem;
+  margin-left: 21.563rem;
   z-index: 0;
   transition: all .2s ease; }
   @media only screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -31119,15 +31119,15 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 }
 .hj{
   border-radius: 20px;
-  border-top-right-radius:20px;
- 
+  border-top-right-radius:20px ;
+  width
 }
 .ccc{
   font-size: 10px;
 }
 
 .form-control{
-  width:1005;
+  width:300%;
 
 }
 
@@ -31139,4 +31139,22 @@ border:2px solid #510cc1;
   margin-left: 30px;
   margin:12px 12px;
   border-radius:8px;
+}
+.ggg{
+  text-align-last: right;
+}
+.ffff{
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+.form-control{
+  width: 165%;
+}
+
+.tyui{
+  text-align-last: center;
+}
+.kk:hover{
+  background: #510cc1;
+  border: 1px solid #510cc1
 }
