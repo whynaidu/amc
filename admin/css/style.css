@@ -31100,8 +31100,9 @@ height:100px;
   height:2px;
 }
 
-.btn:hover{
 
+
+.bt{
 background:#510cc1;
-
+color:white;
 }
