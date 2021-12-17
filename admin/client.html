@@ -710,14 +710,20 @@
 						</a>
                        
                     </li>
-                    <li><a class="ai-icon" href="event.html" aria-expanded="false">
-							<i class="flaticon-381-television"></i>
+                    <li><a class="ai-icon" href="employee.html" aria-expanded="false">
+							<i class="bi bi-person-fill"></i>
+							<span class="nav-text">Employee</span>
+						</a>
+                   
+                    </li>
+                    <li><a class="ai-icon" href="client.html" aria-expanded="false">
+						<i class="bi bi-person-fill"></i>
 							<span class="nav-text">Client</span>
 						</a>
                    
                     </li>
                     <li><a class=" ai-icon" href="quotation.html" aria-expanded="false">
-							<i class="flaticon-381-controls-3"></i>
+							<i class="bi bi-card-text"></i>	
 							<span class="nav-text">Quotation</span>
 						</a>
                
@@ -778,8 +784,7 @@
 			
                 </ul>
 				<div class="copyright">
-					<p><strong>Acara Ticketing Dashboard</strong> © 2021 All Rights Reserved</p>
-					<p>Made with <span class="heart"></span> by DexignZone</p>
+				
 				</div>
 			</div>
         </div>
@@ -826,10 +831,60 @@
 				</div>
 		<div class="row">
 					<div class="col-md-6">
-					<button class="favorite styled"
-         			type="button">
-    				Add New Clinet
+						<button class="favorite styled"
+         			type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    				Add New User
 					</button>
+
+<!-- Modal -->
+<div class="modal fade text center" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Add User</h5>
+ <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"  style="
+    background: transparent;
+    border: none;
+    margin: -35px;
+"><i class="bi bi-x"></i></button></div>
+      <div class="modal-body">
+		  <form >
+        <div class="container">
+			<div class="row">
+  <div class="mb-3 col-4">
+    <label for="exampleInputEmail1" class="form-label">User Role</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+    <label for="exampleInputEmail1" class="form-label">First Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3 col-4">
+    <label for="exampleInputPassword1" class="form-label">Last Name</label>
+    <input type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 col-4">
+    <label for="exampleInputPassword1" class="form-label">Email</label>
+    <input type="email" class="form-control" id="exampleInputPassword1">
+  </div>
+
+
+ 
+
+ </div>
+
+</form>
+      </div>
+      </div>
+	
+      <div class="modal-footer">
+        <button type="button" class="btn bt" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn bt">Save user</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 						</div>
 						<div class="col-md-6 d-flex justify-content-end">
 					<li class="nav-item search2">
@@ -1467,7 +1522,7 @@
         ***********************************-->
         <div class="footer">
             <div class="copyright">
-                <p>Copyright © Designed &amp; Developed by <a href="http://dexignzone.com/" target="_blank">DexignZone</a> 2021</p>
+                <p>Copyright © Designed &amp; Developed by <a href="https://tectignis.in/" target="_blank">Tectignis IT Solutions</a> 2021</p>
             </div>
         </div>
         <!--**********************************
@@ -1540,5 +1595,8 @@
 			});
 		})(jQuery);
 	</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
