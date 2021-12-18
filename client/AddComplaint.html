@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Acara - Ticketing Bootstrap Admin Dashboard</title>
+	<link rel="stylesheet" href="css/complaints.css">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
 	<link rel="stylesheet" href="./vendor/chartist/css/chartist.min.css">
@@ -564,14 +565,13 @@
 		<!--**********************************
             Header start
         ***********************************-->
-		
         <div class="header">
             <div class="header-content">
                 <nav class="navbar navbar-expand">
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
                             <div class="dashboard_bar">
-								Complaints
+							Complaints
                             </div>
                         </div>
                         <ul class="navbar-nav header-right">
@@ -700,8 +700,7 @@
         <!--**********************************
             Header end ti-comment-alt
         ***********************************-->
-
-        <!--**********************************
+            <!--**********************************
             Sidebar start
         ***********************************-->
         <div class="deznav">
@@ -709,7 +708,7 @@
 				<a href="javascript:void(0)" class="add-menu-sidebar" data-toggle="modal" data-target="#addOrderModalside" >+ New Event</a>
 				<ul class="metismenu" id="menu">
                     <li><!-- <a class="" href="javascript:void()" aria-expanded="false"> -->
-						<a class="" href="http://127.0.0.1:5500/acaraadmin-10/Acara-v1.0-1-January-2021/xhtml/index.html">
+						<a class="" href="index.html">
 							<i class="flaticon-381-networking"></i>
 							<span class="nav-text">Dashboard</span>
 						</a>
@@ -764,10 +763,10 @@
                             <li><a href="./chart-peity.html">Peity</a></li>
                         </ul> -->
                     </li>
-                    <li><a class="" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-internet"></i>
-							<span class="nav-text">Complaints</span>
-						</a>
+                    <li><a class="" href="complaint.html">
+						<i class="flaticon-381-internet"></i>
+					<span class="nav-text">Complaints</span>
+					 </a>
                         <!-- <ul aria-expanded="false"> 
                             <li><a href="./ui-accordion.html">Accordion</a></li>
                             <li><a href="./ui-alert.html">Alert</a></li>
@@ -788,10 +787,10 @@
                             <li><a href="./ui-grid.html">Grid</a></li>
 
                         </ul>-->
-                     <li><a class="" href="services.html" aria-expanded="false"> 
-						<i class="flaticon-381-heart"></i>
-						<span class="nav-text">Services</span>
-					</a>
+                     <li><a class="" href="javascript:void()" aria-expanded="false"> 
+							<i class="flaticon-381-heart"></i>
+							<span class="nav-text">Services</span>
+						</a>
                         <!-- <ul aria-expanded="false"> 
                             <li><a href="./uc-select2.html">Select 2</a></li>
                             <li><a href="./uc-nestable.html">Nestedable</a></li>
@@ -864,213 +863,27 @@
         <div class="content-body">
             <!-- row -->
 			<div class="container-fluid">
-				<div class="row">
-			    <button class="lki" onclick="location.href='complaints.html'">+ Add Complaints</button>
-			     <div class="col-md-6 d-flex justify-content-end" style="left: 350px;">
-				<li class="nav-item search">
-					<div class="input-group zx">
-						<input type="text" class="form-control" placeholder="Search here...">
-						<div class="input-group-append">
-							<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
-						</div>
-						</div>
-					</div>
-				</li>
-			</div>
-			   
-				<!-- Add Order -->
-				<div class="modal fade" id="addOrderModalside">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Add Event</h5>
-								<button type="button" class="close" data-dismiss="modal"><span>&times;</span>
-								</button>
-							</div>
-							<div class="modal-body">
-								<form>
-									<div class="form-group">
-										<label class="text-black font-w500">Event Name</label>
-										<input type="text" class="form-control">
-									</div>
-									<div class="form-group">
-										<label class="text-black font-w500">Event Date</label>
-										<input type="date" class="form-control">
-									</div>
-									<div class="form-group">
-										<label class="text-black font-w500">Description</label>
-										<input type="text" class="form-control">
-									</div>
-									<div class="form-group">
-										<button type="button" class="btn btn-primary">Create</button>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="d-flex flex-wrap mb-2 align-items-center justify-content-between">
-					
+				<form>
 				
-					
-					<!-- <div class="mb-3 mr-3"> 
-						<h6 class="fs-16 text-black font-w600 mb-0">568 Total Orders</h6>
-						<span class="fs-14">Based your preferences</span>
-					</div>
-					<div class="event-tabs mb-3 mr-3">
-						<ul class="nav nav-tabs" role="tablist">
-							<li class="nav-item">
-								<a class="nav-link active" data-toggle="tab" href="#All" role="tab" aria-selected="true">
-									All
-								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" data-toggle="tab" href="#Sold" role="tab" aria-selected="false">
-									Sold
-								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" data-toggle="tab" href="#Refunded" role="tab" aria-selected="false">
-									Refunded
-								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" data-toggle="tab" href="#Canceled" role="tab" aria-selected="false">
-									Canceled
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="d-flex mb-3">
-						<select class="form-control style-2 default-select mr-3">
-							<option>Newest</option>
-							<option>Monthly</option>
-							<option>Weekly</option>
-						</select>
-						<a href="javascript:void(0)" class="btn btn-primary text-nowrap"><i class="fa fa-file-text scale5 mr-3" aria-hidden="true"></i>Generate Report</a>
-					</div>-->
-				</div>
-				<div class="row">
-					<div class="col-xl-12">
-						<div class="tab-content">
-							<div id="All" class="tab-pane active fade show">
-								<!-- Button trigger modal -->
-
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <h5 class="modal-title" id="exampleModalLabel">Description</h5>
-		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><a class="bi bi-close"></a></button>
-		</div>
-		<div class="modal-body">
-			<textarea name="w3review" rows="4" cols="52">
-			</textarea>
-		</div>
-		<div class="modal-footer">
-		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="margin-right:100px;">Close</button>
-		  <button type="button" class="btn btn-primary" style="margin-right:100px;">Submit</button>
-		</div>
-	  </div>
-	</div>
-  </div>
-								<div class="table-responsive">
-                                    <table id="example2" class="table card-table display dataTablesCard">
-										<thead>
-                                            <tr>
-                                                <th>Complaint No.</th>
-                                                <th>Date&Time</th>
-                                                <th>Type</th>
-                                                <th>Status </th>
-												<th>Close</th>
-                                                <th>Ticket View</th>
-                                                <th>High Priority</th>
-                                               
-                                            </tr>
-                                        </thead>
-										<tbody>
-											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												
-												<td><label class="poi"><p class=iii>Open</p></label></td>
-												 <td><button class="mnmn" type="button" onclick="">Closed</button></td>
-												 <td><label class="mm" type="button" > <i class="bi bi-eye"></label></i></td>
-												
-												<td><button class="nn" type="button" onclick="">Escalate</button></td>
-												
-											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												
-												<td><label class="poo"><p class=iii>Closed</p></label></td>
-						 <td><button class="mnmn" type="button" onclick="">Closed</button></td>
-						 <td><label class="mm" type="button" > <i class="bi bi-eye"></label></i></td>
-												<!-- <td>London, US</td> -->
-				<td><button class="nn" type="button" onclick="">Escalate</button></td>
-											
-											</tr>
-											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												
-												<td><label class="pop"><p class=iii>Process</p></label></td>
-												 <td><button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Closed</button></td>
-												 <!-- Button trigger modal -->
-
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <h5 class="modal-title" id="exampleModalLabel">Des0cription</h5>
-		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-		</div>
-		<div class="modal-body">
-		  sanket
-		</div>
-		<div class="modal-footer">
-		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-		  <button type="button" class="btn btn-primary">Submit</button>
-		</div>
-	  </div>
-	</div>
-  </div>
-												 <td><label class="mm" type="button" > <i class="bi bi-eye"></label></i></td>
-											
-												<td><button class="nn" type="button" onclick="">Escalate</button></td>
-												
-											</tr>
-											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												<!-- <td>Bella Simatupang</td> -->
-												<td><label class="pou"><p class=iii>Asign</p></label></td>
-												 <td><button class="mnmn" type="button" onclick="">Closed</button></td>
-												 <td><label class="mm" type="button" > <i class="bi bi-eye"></label></i></td>
-												<!-- <td>London, US</td> -->
-												<td><button class="nn" type="button" onclick="">Escalate</button></td>
-												<!--<td>567k left</td>
-												<td><strong class="text-black">NO</strong></td>
-												 <td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$536,00</a></td> -->
-											</tr>
-											
-										</tbody>
-									</table>
-								</div>
-							</div>
-							</div>
-                         		</table>
-								</div>>
-								
- <!--**********************************
+					<h2>Complaint Form</h2>
+			
+				<div class="mnj">
+				Complaint Date & Time :<input type="date" placeholder="Complaint Date"><input type="time" placeholder="Date"><br>
+                Complaint Type :<select class="jkl" placeholder="Select">
+					<option value="Select"></option>
+				<option value="Desktop">Desktop</option>
+			    <option value="Laptop">Laptop</option>
+			     <option value="CCTV">CCTV</option> 
+				<option value="Routers">Routers</option>
+				<option value="Routers">Routers</option></select><br>
+				<p class="wwe">Description :</p><textarea class="www" placeholder="Write here..."></textarea><br>
+				Contact Name :<input type="text" placeholder="&nbsp;&nbsp;Name"><br>
+				Contact No :<input type="number" placeholder="&nbsp;&nbsp;0123-456-789"><br>
+				<input type="submit">
+			</div>
+			</div>
+        </div>
+        <!--**********************************
             Content body end
         ***********************************-->
 
@@ -1152,8 +965,5 @@
 			});
 		})(jQuery);
 	</script>
-
-	<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
