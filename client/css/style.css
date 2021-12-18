@@ -31074,7 +31074,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 
 .mmm{
   height:40px;
-  width: 110px;
+  width: 50px;
   color: #000;
   outline: 0px;
   border-radius: 10px;
@@ -31083,7 +31083,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 }
 .mmm:hover{
   height:40px;
-  width: 110px;
+  width: 50px;
   background:#bfbfbf;
  border-radius: 10px;
   text-align:center;
