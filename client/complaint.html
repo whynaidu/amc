@@ -564,13 +564,14 @@
 		<!--**********************************
             Header start
         ***********************************-->
+		
         <div class="header">
             <div class="header-content">
                 <nav class="navbar navbar-expand">
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
                             <div class="dashboard_bar">
-							Purchase
+								Complaints
                             </div>
                         </div>
                         <ul class="navbar-nav header-right">
@@ -722,10 +723,10 @@
 						 </ul> -->
 						
                     </li>
-                    <li><a class="" href="purchase.html" aria-expanded="false">
-							<i class="flaticon-381-television"></i>
-							<span class="nav-text">Purchase</span>
-						</a>
+                    <li><a class="" href="purchase.html">
+						<i class="flaticon-381-television"></i>
+					<span class="nav-text">Purchase</span>
+					 </a>
                         <!-- <ul aria-expanded="false"> 
                             <li><a href="./app-profile.html">Profile</a></li>
                             <li><a href="./post-details.html">Post Details</a></li>
@@ -763,10 +764,10 @@
                             <li><a href="./chart-peity.html">Peity</a></li>
                         </ul> -->
                     </li>
-                    <li><a class="" href="complaint.html">
-						<i class="flaticon-381-internet"></i>
-					<span class="nav-text">Complaints</span>
-					 </a>
+                    <li><a class="" href="complaint.html" aria-expanded="false">
+							<i class="flaticon-381-internet"></i>
+							<span class="nav-text">Complaints</span>
+						</a>
                         <!-- <ul aria-expanded="false"> 
                             <li><a href="./ui-accordion.html">Accordion</a></li>
                             <li><a href="./ui-alert.html">Alert</a></li>
@@ -788,9 +789,9 @@
 
                         </ul>-->
                      <li><a class="" href="services.html" aria-expanded="false"> 
-							<i class="flaticon-381-heart"></i>
-							<span class="nav-text">Services</span>
-						</a>
+						<i class="flaticon-381-heart"></i>
+						<span class="nav-text">Services</span>
+					</a>
                         <!-- <ul aria-expanded="false"> 
                             <li><a href="./uc-select2.html">Select 2</a></li>
                             <li><a href="./uc-nestable.html">Nestedable</a></li>
@@ -863,26 +864,18 @@
         <div class="content-body">
             <!-- row -->
 			<div class="container-fluid">
-				
 				<div class="row">
-					<div class="col-md-6">
-				 	
-					
-					
-					</div>
-						<div class="col-md-6 d-flex justify-content-end">
-					<li class="nav-item search">
-						<div class="input-group zx">
-							<input type="text" class="form-control" placeholder="Search here...">
-							<div class="input-group-append">
-								<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
-							</div>
-							</div>
+			    <button class="lki" onclick="location.href='AddComplaint.html'">+ Add Complaints</button>
+			     <div class="col-md-6 d-flex justify-content-end" style="left: 350px;">
+				<li class="nav-item search">
+					<div class="input-group zx">
+						<input type="text" class="form-control" placeholder="Search here...">
+						<div class="input-group-append">
+							<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
 						</div>
-					</li>
-
-					
-				</div>
+						</div>
+					</div>
+				</li>
 			</div>
 			   
 				<!-- Add Order -->
@@ -961,39 +954,103 @@
 					<div class="col-xl-12">
 						<div class="tab-content">
 							<div id="All" class="tab-pane active fade show">
+								<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h1 class="modal-title" id="exampleModalLabel">Reason</h1>
+		 
+		</div>
+		<div class="modal-body">
+			<textarea name="w3review" rows="4" cols="52"style="border-radius:20px;">
+			</textarea>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="mnmn" data-bs-dismiss="modal" style="margin-right:100px;background: red;">Close</button>
+		  <button type="button" class="mnmn" style="margin-right:100px;">Submit</button>
+		</div>
+	  </div>
+	</div>
+  </div>
 								<div class="table-responsive">
                                     <table id="example2" class="table card-table display dataTablesCard">
 										<thead>
                                             <tr>
-                                                <th>Invoice No</th>
-                                                <th>Date</th>
-                                                <th>A M C type</th>
-                                                <th>Action </th>
-                                               
-                                                
+                                                <th>Complaint No.</th>
+                                                <th>Date&Time</th>
+                                                <th>Type</th>
+                                                <th>Status </th>
+												<th>Close</th>
+                                                <th>View </th>
+                                                <th>High Priority</th>
                                                
                                             </tr>
                                         </thead>
-										
+										<tbody>
 											<tr>
 												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
 												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												<td><label class="mmm" type="label" onclick=""><i class="bi bi-download" ></i></label></td>
-											</tr>	
+												
+												<td><label class="poi"><p class=iii>Open</p></label></td>
+												<td><button  type="button" class="mnmn" data-bs-toggle="modal" data-bs-target="#exampleModal">Closed</button></td>
+												 <td><label class="mm" type="button" > <i class="bi bi-eye"></label></i></td>
+												
+												<td><button class="nn" type="button" onclick="">Escalate</button></td>
+												
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												
+												<td><label class="poo"><p class=iii>Closed</p></label></td>
+												<td><button  type="button" class="mnmn" data-bs-toggle="modal" data-bs-target="#exampleModal">Closed</button></td>
+						 <td><label class="mm" type="button" > <i class="bi bi-eye"></label></i></td>
+												<!-- <td>London, US</td> -->
+				<td><button class="nn" type="button" onclick="">Escalate</button></td>
+											
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												
+												<td><label class="pop"><p class=iii>Process</p></label></td>
+												 <td><button  type="button" class="mnmn" data-bs-toggle="modal" data-bs-target="#exampleModal">Closed</button></td>
+												 <!-- Button trigger modal -->
+                                              <td><label class="mm" type="button" > <i class="bi bi-eye"></label></i></td>
+											
+												<td><button class="nn" type="button" onclick="">Escalate</button></td>
+												
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<!-- <td>Bella Simatupang</td> -->
+												<td><label class="pou"><p class=iii>Asign</p></label></td>
+												<td><button  type="button" class="mnmn" data-bs-toggle="modal" data-bs-target="#exampleModal">Closed</button></td>
+												 <td><label class="mm" type="button" > <i class="bi bi-eye"></label></i></td>
+												<!-- <td>London, US</td> -->
+												<td><button class="nn" type="button" onclick="">Escalate</button></td>
+												<!--<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												 <td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$536,00</a></td> -->
+											</tr>
+											
+										</tbody>
 									</table>
 								</div>
 							</div>
-							
-                                
-								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-            </div>
-        </div>
-        <!--**********************************
+                         		</table>
+								</div>>
+								
+ <!--**********************************
             Content body end
         ***********************************-->
 
@@ -1075,5 +1132,8 @@
 			});
 		})(jQuery);
 	</script>
+
+	<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Acara - Ticketing Bootstrap Admin Dashboard</title>
+    <title>Tectignis IT Solutions-AMC Emp Dashboard</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
 	<link rel="stylesheet" href="./vendor/chartist/css/chartist.min.css">
@@ -43,7 +43,7 @@
             <a href="index.html" class="brand-logo">
                 <!-- <img class="logo-abbr" src="./images/logo.png" alt=""> -->
                 <img class="logo-compact" src="./images/logo-text.png" alt="">
-                    <img class="brand-title" src="/acaraadmin-10/Acara-v1.0-1-January-2021/1637733681043_TM LOGO.jpg"  style="width: 255px;  height: 100px;" alt="Tectignis IT Solutions">
+                    <img class="brand-title" src="/1637733681043_TM LOGO.jpg"  style="width: 255px;  height: 100px;" alt="Tectignis IT Solutions">
             </a>
 
             <div class="nav-control">
@@ -567,7 +567,7 @@
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
                             <div class="dashboard_bar">
-					pURCHASE
+				        	PURCHASE
                             </div>
                         </div>
                         <ul class="navbar-nav header-right">
@@ -674,7 +674,7 @@
 									</div> -->
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right">
-                                    <a href="./app-profile.html" class="dropdown-item ai-icon">
+                                    <a href="profile.html" class="dropdown-item ai-icon">
                                         <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                                         <span class="ml-2">Profile </span>
                                     </a>
@@ -700,7 +700,7 @@
         <!--**********************************
             Sidebar start
         ***********************************-->
-           <div class="deznav">
+            <div class="deznav">
             <div class="deznav-scroll">
 				<a href="javascript:void(0)" class="add-menu-sidebar" data-toggle="modal" data-target="#addOrderModalside" >+ New Event</a>
 				<ul class="metismenu" id="menu">
@@ -717,8 +717,8 @@
                       
                     </li>
          <li><a class="ai-icon" href="client.html" aria-expanded="false">
-													<i class="bi bi-person-fill"></i>
-							<span class="nav-text">clietns </span>
+													<i class="bi bi-people-fill"></i>
+							<span class="nav-text">Clients</span>
 						</a>
 
                     <li><a class=" ai-icon" href="quotation.html" aria-expanded="false">
@@ -728,18 +728,18 @@
                   
                     </li>
                     <li><a class=" ai-icon" href="purchase.html" aria-expanded="false">
-							<i class="bi bi-cash-stack"></i>
+												<i class="bi bi-cash-stack"></i>
 							<span class="nav-text">Purchase</span>
 						</a>
                  
                     </li>
                     <li><a class=" ai-icon" href="amc.html" aria-expanded="false">
-							<i class="flaticon-381-heart"></i>
+						<i class="bi bi-shield-minus"></i>
 							<span class="nav-text">AMC</span>
 						</a>
                   
                     </li>
-                    <li><a href="widget-basic.html" class="ai-icon" aria-expanded="false">
+                    <li><a href="complaint.html" class="ai-icon" aria-expanded="false">
 							<i class="flaticon-381-settings-2"></i>
 							<span class="nav-text">Complaint</span>
 						</a>
@@ -755,8 +755,8 @@
 							<span class="nav-text">Report</span>
 						</a>
                         <ul aria-expanded="false">
-                            <li><a href="table-bootstrap-basic.html">Sales</a></li>
-                            <li><a href="table-datatable-basic.html">Complaint List</a></li>
+                            <li><a href="sales.html">Sales</a></li>
+                            <li><a href="complaintlist.html">Complaint List</a></li>
                         </ul>
                     </li>
                
@@ -768,13 +768,13 @@
                     </li>
                
                     <li><a class=" ai-icon" href="discount.html" aria-expanded="false">
-							<i class="bi bi-device-ssd"></i>
+							<i class="bi bi-percent"></i>
 							<span class="nav-text">Discount </span>
 						</a>
                  
                     </li>
                     <li><a class=" ai-icon" href="emailsetup.html" aria-expanded="false">
-							<i class="bi bi-device-ssd"></i>
+						<i class="bi bi-envelope-plus-fill"></i>
 							<span class="nav-text">Email Configurations </span>
 						</a>
                  
@@ -838,13 +838,55 @@
 						</div>
 					</div>
 				</div>
-		<div class="row">
+			<div class="row">
 					<div class="col-md-6">
 					<button class="favorite styled"
-         			type="button">
-    				Add New Clinet
+         			type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    				 + Add New Purchase
 					</button>
+
+<!-- Modal -->
+<div class="modal fade text center" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Add Purchase</h5>
+ <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"  style="
+    background: transparent;
+    border: none;
+"><i class="bi bi-x"></i></button></div>
+      <div class="modal-body">
+		  <form >
+        <div class="container">
+			<div class="row">
+  <div class="mb-3 col-4">
+    <label for="exampleInputEmail1" class="form-label">User Role</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+    <label for="exampleInputEmail1" class="form-label">First Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3 col-4">
+    <label for="exampleInputPassword1" class="form-label">Last Name</label>
+    <input type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+ </div>
+
+</form>
+      </div>
+      </div>
+	
+      <div class="modal-footer">
+        <button type="button" class="btn bt" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn bt">Save Purchase</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 						</div>
+                        
+
 						<div class="col-md-6 d-flex justify-content-end">
 					<li class="nav-item search2">
 						<div class="input-group ">
@@ -900,127 +942,7 @@
 												<td><strong class="text-black">NO</strong></td>
 												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$536,00</a></td>
 											</tr>
-											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">Great Big Fireworks at <br> Newyork City</span></td>
-												<td>David Bekam</td>
-												<td>Sydney, Australia</td>
-												<td>4 Pcs</td>
-												<td>567k left</td>
-												<td><strong class="text-black">NO</strong></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$65,22</a></td>
-											</tr>
-											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">Charity Fun Games at <br> Lapangan Merdeka</span></td>
-												<td>Andrew Stevano</td>
-												<td>Jakarta, Indonesia</td>
-												<td>2 Pcs</td>
-												<td>567k left</td>
-												<td><strong class="text-primary">REFUND</strong></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$124,55</a></td>
-											</tr>
-											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">Indonesian Envato <br> Authors Fun Run </span></td>
-												<td>Cive Slauw</td>
-												<td>Penang, Malaysia</td>
-												<td>4 Pcs</td>
-												<td>567k left</td>
-												<td><strong class="text-black">NO</strong></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$536,00</a></td>
-											</tr>
-											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												<td>Eddy Cusuma</td>
-												<td>Medan, Indonesia</td>
-												<td>3 Pcs</td>
-												<td>567k left</td>
-												<td><strong class="text-black">NO</strong></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$44,00</a></td>
-											</tr>
-											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												<td>Frank Azire</td>
-												<td>Bangkok, Thailand</td>
-												<td>1 Pcs</td>
-												<td>567k left</td>
-												<td><strong class="text-black">REFUND</strong></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$51,50</a></td>
-											</tr>
-											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												<td>Bella Simatupang</td>
-												<td>London, US</td>
-												<td>1 Pcs</td>
-												<td>567k left</td>
-												<td><strong class="text-black">NO</strong></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
-											</tr>
-											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												<td>Elisabeth Queen</td>
-												<td>London, US</td>
-												<td>1 Pcs</td>
-												<td>567k left</td>
-												<td><strong class="text-black">NO</strong></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
-											</tr>
-											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												<td>Andrew Stevano</td>
-												<td>London, US</td>
-												<td>1 Pcs</td>
-												<td>567k left</td>
-												<td><strong class="text-black">NO</strong></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
-											</tr>
-											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												<td>Bella Simatupang</td>
-												<td>London, US</td>
-												<td>1 Pcs</td>
-												<td>567k left</td>
-												<td><strong class="text-black">NO</strong></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
-											</tr>
-											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												<td>Bella Simatupang</td>
-												<td>London, US</td>
-												<td>1 Pcs</td>
-												<td>567k left</td>
-												<td><strong class="text-black">NO</strong></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
-											</tr>
-											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												<td>Bella Simatupang</td>
-												<td>London, US</td>
-												<td>1 Pcs</td>
-												<td>567k left</td>
-												<td><strong class="text-black">NO</strong></td>
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
-											</tr>
+											
 											<tr>
 												<td>#0012451</td>
 												<td>04/08/2020<br>12:34 AM</td>
@@ -1607,8 +1529,8 @@
             Footer start
         ***********************************-->
         <div class="footer">
-            <div class="copyright">
-                <p>Copyright © Designed &amp; Developed by <a href="http://dexignzone.com/" target="_blank">DexignZone</a> 2021</p>
+            <div class="copyright mr-2">
+                    <p>Copyright © Designed &amp; Developed by <a href="https://tectignis.in/" target="_blank">Tectignis IT Solutions</a> 2021</p>
             </div>
         </div>
         <!--**********************************
@@ -1681,5 +1603,8 @@
 			});
 		})(jQuery);
 	</script>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
