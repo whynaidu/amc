@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Acara - Ticketing Bootstrap Admin Dashboard</title>
+    <title>Tectignis IT Solutions-AMC Emp Dashboard</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
 	<link rel="stylesheet" href="./vendor/chartist/css/chartist.min.css">
@@ -717,8 +717,8 @@
                       
                     </li>
          <li><a class="ai-icon" href="client.html" aria-expanded="false">
-													<i class="bi bi-person-fill"></i>
-							<span class="nav-text">clients</span>
+													<i class="bi bi-people-fill"></i>
+							<span class="nav-text">Clients</span>
 						</a>
 
                     <li><a class=" ai-icon" href="quotation.html" aria-expanded="false">
@@ -734,7 +734,7 @@
                  
                     </li>
                     <li><a class=" ai-icon" href="amc.html" aria-expanded="false">
-							<i class="flaticon-381-heart"></i>
+						<i class="bi bi-shield-minus"></i>
 							<span class="nav-text">AMC</span>
 						</a>
                   
@@ -768,13 +768,13 @@
                     </li>
                
                     <li><a class=" ai-icon" href="discount.html" aria-expanded="false">
-							<i class="bi bi-device-ssd"></i>
+						<i class="bi bi-percent"></i>
 							<span class="nav-text">Discount </span>
 						</a>
                  
                     </li>
                     <li><a class=" ai-icon" href="emailsetup.html" aria-expanded="false">
-							<i class="bi bi-device-ssd"></i>
+							<i class="bi bi-envelope-plus-fill"></i>
 							<span class="nav-text">Email Configurations </span>
 						</a>
                  
@@ -842,38 +842,66 @@
 					<div class="col-md-6">
 						<button class="favorite styled"
          			type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    				Add New User
+    				 + Add New User
 					</button>
 
 <!-- Modal -->
 <div class="modal fade text center" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog ">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content ">
       <div class="modal-header">
         <h5 class="modal-title" id="staticBackdropLabel">Add User</h5>
  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"  style="
     background: transparent;
     border: none;
-    margin: -35px;
 "><i class="bi bi-x"></i></button></div>
       <div class="modal-body">
 		  <form >
-        <div class="container">
+        <div class="container bord">
 			<div class="row">
-  <div class="mb-3 col-4">
-    <label for="exampleInputEmail1" class="form-label">User Role</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-
-    <label for="exampleInputEmail1" class="form-label">First Name</label>
+				<div class="col-6">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Company Name</label>
     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
-  <div class="mb-3 col-4">
-    <label for="exampleInputPassword1" class="form-label">Last Name</label>
+  <div class="mb-3 ">
+    <label for="exampleInputEmail1" class="form-label">Address</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3 ">
+    <label for="exampleInputPassword1" class="form-label">State</label>
     <input type="text" class="form-control" id="exampleInputPassword1">
   </div>
-  <div class="mb-3 col-4">
+  <div class="mb-3 ">
     <label for="exampleInputPassword1" class="form-label">Email</label>
     <input type="email" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Pincode</label>
+    <input type="number" class="form-control" id="exampleInputPassword1">
+  </div>
+  </div>
+				<div class="col-6">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Customer Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3 ">
+    <label for="exampleInputEmail1" class="form-label">City</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3 ">
+    <label for="exampleInputPassword1" class="form-label">Country</label>
+    <input type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 ">
+    <label for="exampleInputPassword1" class="form-label">Phone</label>
+    <input type="email" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">GSTIN</label>
+    <input type="number" class="form-control" id="exampleInputPassword1">
+  </div>
   </div>
 
 
@@ -932,7 +960,7 @@
 												<td>Bella Simatupang</td>
 												<td>London, US</td>
 												
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td><a href="javascript:void(0)" class="btn bt"><i class="bi bi-eye"></i></a></td>
 											</tr>
 											<tr>
 											
@@ -941,107 +969,9 @@
 												<td>Elisabeth Queen</td>
 												<td>Medan, Indonesia</td>
 											
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td><a href="javascript:void(0)" class="btn bt"><i class="bi bi-eye"></i></a></td>
 											</tr>
-											<tr>
 											
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">Great Big Fireworks at <br> Newyork City</span></td>
-												<td>David Bekam</td>
-												<td>Sydney, Australia</td>
-												
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
-											</tr>
-											<tr>
-											
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">Charity Fun Games at <br> Lapangan Merdeka</span></td>
-												<td>Andrew Stevano</td>
-												<td>Jakarta, Indonesia</td>
-											
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
-											</tr>
-											<tr>
-											
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">Indonesian Envato <br> Authors Fun Run </span></td>
-												<td>Cive Slauw</td>
-												<td>Penang, Malaysia</td>
-												
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
-											</tr>
-											<tr>
-											
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												<td>Eddy Cusuma</td>
-												<td>Medan, Indonesia</td>
-										
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
-											</tr>
-											<tr>
-											
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												<td>Frank Azire</td>
-												<td>Bangkok, Thailand</td>
-										
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
-											</tr>
-											<tr>
-										
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												<td>Bella Simatupang</td>
-												<td>London, US</td>
-										
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
-											</tr>
-											<tr>
-										
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												<td>Elisabeth Queen</td>
-												<td>London, US</td>
-										
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
-											</tr>
-											<tr>
-												
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												<td>Andrew Stevano</td>
-												<td>London, US</td>
-										
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
-											</tr>
-											<tr>
-											
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												<td>Bella Simatupang</td>
-												<td>London, US</td>
-											
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
-											</tr>
-											<tr>
-											
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												<td>Bella Simatupang</td>
-												<td>London, US</td>
-										
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
-											</tr>
-											<tr>
-										
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												<td>Bella Simatupang</td>
-												<td>London, US</td>
-									
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
-											</tr>
 											<tr>
 											
 												<td>04/08/2020<br>12:34 AM</td>
@@ -1049,7 +979,7 @@
 												<td>Bella Simatupang</td>
 												<td>London, US</td>
 
-												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+												<td><a href="javascript:void(0)" class="btn bt"><i class="bi bi-eye"></i></a></td>
 											</tr>
 										</tbody>
 									</table>
