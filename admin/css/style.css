@@ -31031,7 +31031,6 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 
 .bi:hover{
   transform: rotateY(30deg);
-  color:#510cc1;
 }
 
 
@@ -31113,4 +31112,31 @@ color:white;
 
 .box{
   margin-left:-20px;
+}
+
+.bord input{
+  border: 0.2px solid #510cc1;
+}
+
+
+.bi{
+  font-size:17px;
+  
+}
+
+.bt{
+  background:#e5d1f0;
+  color:#510cc1;
+}
+.bt:hover{
+  background:#510cc1;
+  color:white;
+}
+
+.ic i{
+  font-size: 60px;
+}
+
+.ic i:hover{
+ color:#510cc1;
 }
