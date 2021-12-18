@@ -31049,14 +31049,14 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 }
 .mm{
   height:40px;
-  width: 70px;
+  width: 50px;
   border-radius: 20px;
   background:#e5d1f0;
   
 }
 .mm:hover{
   height:40px;
-  width: 70px;
+  width: 50px;
   background:#510cc1;
   border-radius: 20px;
   color:white;
@@ -31074,19 +31074,18 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 
 .mmm{
   height:40px;
-  width: 110px;
-  color: #000;
-  outline: 0px;
-  border-radius: 10px;
-  text-align:center;
+  width: 50px;
+  border-radius: 20px;
+  background:#e5d1f0;
+
 
 }
 .mmm:hover{
   height:40px;
-  width: 110px;
-  background:#bfbfbf;
- border-radius: 10px;
-  text-align:center;
+  width: 50px;
+  background:#510cc1;
+  border-radius: 20px;
+  color:white;
 }
 button.nn{
   height:40px;
@@ -31114,15 +31113,15 @@ button.nn{
   margin-bottom: 20px;
 }
 .bi-eye{
-  vertical-align: -8px;
-  font-size: 25px;
-   margin-left:22px;
+  vertical-align: -12px;
+  font-size: 20px;
+   margin-left:15px;
  }
  
 .bi-download{
   vertical-align: -8px;
   font-size: 15px;
-
+ margin-left: 17px;
 }
 input-group cd{
   margin-left: 500px;
