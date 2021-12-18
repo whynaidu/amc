@@ -31106,3 +31106,11 @@ height:100px;
 background:#510cc1;
 color:white;
 }
+
+.bt:hover{
+  color:white;
+}
+
+.box{
+  margin-left:-20px;
+}

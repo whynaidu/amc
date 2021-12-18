@@ -567,7 +567,7 @@
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
                             <div class="dashboard_bar">
-					pURCHASE
+				        	PURCHASE
                             </div>
                         </div>
                         <ul class="navbar-nav header-right">
@@ -700,7 +700,7 @@
         <!--**********************************
             Sidebar start
         ***********************************-->
-           <div class="deznav">
+            <div class="deznav">
             <div class="deznav-scroll">
 				<a href="javascript:void(0)" class="add-menu-sidebar" data-toggle="modal" data-target="#addOrderModalside" >+ New Event</a>
 				<ul class="metismenu" id="menu">
@@ -718,7 +718,7 @@
                     </li>
          <li><a class="ai-icon" href="client.html" aria-expanded="false">
 													<i class="bi bi-person-fill"></i>
-							<span class="nav-text">clietns </span>
+							<span class="nav-text">clients</span>
 						</a>
 
                     <li><a class=" ai-icon" href="quotation.html" aria-expanded="false">
@@ -728,7 +728,7 @@
                   
                     </li>
                     <li><a class=" ai-icon" href="purchase.html" aria-expanded="false">
-							<i class="bi bi-cash-stack"></i>
+												<i class="bi bi-cash-stack"></i>
 							<span class="nav-text">Purchase</span>
 						</a>
                  
@@ -739,7 +739,7 @@
 						</a>
                   
                     </li>
-                    <li><a href="widget-basic.html" class="ai-icon" aria-expanded="false">
+                    <li><a href="complaint.html" class="ai-icon" aria-expanded="false">
 							<i class="flaticon-381-settings-2"></i>
 							<span class="nav-text">Complaint</span>
 						</a>
@@ -755,8 +755,8 @@
 							<span class="nav-text">Report</span>
 						</a>
                         <ul aria-expanded="false">
-                            <li><a href="table-bootstrap-basic.html">Sales</a></li>
-                            <li><a href="table-datatable-basic.html">Complaint List</a></li>
+                            <li><a href="sales.html">Sales</a></li>
+                            <li><a href="complaintlist.html">Complaint List</a></li>
                         </ul>
                     </li>
                
@@ -838,13 +838,56 @@
 						</div>
 					</div>
 				</div>
-		<div class="row">
+			<div class="row">
 					<div class="col-md-6">
 					<button class="favorite styled"
-         			type="button">
-    				Add New Clinet
+         			type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    				Add New Purchase
 					</button>
+
+<!-- Modal -->
+<div class="modal fade text center" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Add User</h5>
+ <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"  style="
+    background: transparent;
+    border: none;
+    margin: -35px;
+"><i class="bi bi-x"></i></button></div>
+      <div class="modal-body">
+		  <form >
+        <div class="container">
+			<div class="row">
+  <div class="mb-3 col-4">
+    <label for="exampleInputEmail1" class="form-label">User Role</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+    <label for="exampleInputEmail1" class="form-label">First Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3 col-4">
+    <label for="exampleInputPassword1" class="form-label">Last Name</label>
+    <input type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+ </div>
+
+</form>
+      </div>
+      </div>
+	
+      <div class="modal-footer">
+        <button type="button" class="btn bt" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn bt">Save Purchase</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 						</div>
+                        
+
 						<div class="col-md-6 d-flex justify-content-end">
 					<li class="nav-item search2">
 						<div class="input-group ">
@@ -1607,8 +1650,8 @@
             Footer start
         ***********************************-->
         <div class="footer">
-            <div class="copyright">
-                <p>Copyright © Designed &amp; Developed by <a href="http://dexignzone.com/" target="_blank">DexignZone</a> 2021</p>
+            <div class="copyright mr-2">
+                    <p>Copyright © Designed &amp; Developed by <a href="https://tectignis.in/" target="_blank">Tectignis IT Solutions</a> 2021</p>
             </div>
         </div>
         <!--**********************************
@@ -1681,5 +1724,8 @@
 			});
 		})(jQuery);
 	</script>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
