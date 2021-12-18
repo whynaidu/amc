@@ -31120,7 +31120,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 .hj{
   border-radius: 20px;
   border-top-right-radius:20px ;
-  width
+  /* width */
 }
 .ccc{
   font-size: 10px;
@@ -31227,7 +31227,7 @@ border:2px solid #510cc1;
   font-size: 22px;
   padding-left: 15px;
 }
-..fdg{
+.fdg{
   vertical-align: -8px;
   font-size: 25px;
    margin-left:22px;
