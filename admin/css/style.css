@@ -341,7 +341,7 @@ a {
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #fe2002;
+    color: #510cc1;
     text-decoration: underline; }
 
 a:not([href]):not([class]) {
@@ -10093,7 +10093,7 @@ svg.pulse-svg {
   .header-right .notification_dropdown .nav-link {
     position: relative;
     color: #510cc1;
-    background: rgba(254, 99, 78, 0.05);
+    background: rgb(243 78 254 / 5%);
     border-radius: 1.25rem;
     padding: 14px;
     line-height: 1; }
