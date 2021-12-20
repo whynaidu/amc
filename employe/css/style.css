@@ -31146,6 +31146,7 @@ border:2px solid #510cc1;
 .ffff{
   margin-left: 0px;
   margin-bottom: 10px;
+  width
 }
 .form-control{
   width: 165%;
@@ -31256,4 +31257,7 @@ border:2px solid #510cc1;
   color: white;
   border-radius: 15px;
   border: 1px solid #510cc1;
+}
+.searchbarwdt{
+  width: 1140px;
 }
