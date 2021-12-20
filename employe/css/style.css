@@ -341,7 +341,7 @@ a {
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #fe2002;
+    color: #510cc1;
     text-decoration: underline; }
 
 a:not([href]):not([class]) {
@@ -2996,7 +2996,7 @@ input[type="button"].btn-block {
   .input-group > .custom-file {
     position: relative;
     flex: 1 1 auto;
-    width: 1100px;
+    width: 250px;
     min-width: 0;
     margin-bottom: 0px; }
     .input-group > .form-control + .form-control,
@@ -31040,7 +31040,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   text-align: center;
   color: #fff;
   /* text-shadow: 1px 1px 1px #000; */
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: #510cc1 ;
   margin-bottom: 10px;
 }
@@ -31061,8 +31061,8 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   padding-left: 400px;
   border-radius: 5px;
 }
-.zx{
-  margin-bottom: 5px;
+.search-bar-mrg-btm{
+  margin-bottom: 20px;
 }
 .rr{
   padding-right: -100px;
@@ -31120,7 +31120,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 .hj{
   border-radius: 20px;
   border-top-right-radius:20px ;
-  width
+  /* width */
 }
 .ccc{
   font-size: 10px;
@@ -31146,6 +31146,7 @@ border:2px solid #510cc1;
 .ffff{
   margin-left: 0px;
   margin-bottom: 10px;
+  width
 }
 .form-control{
   width: 165%;
@@ -31195,4 +31196,68 @@ border:2px solid #510cc1;
 }
 .dfg:hover{
   /* color: white; */
+}
+.bi-pencil{
+  font-size: 24px;
+}
+.bi-arrow-left-right{
+  font-size: 23px;
+}
+.search-bar{
+  width: 180px;
+  margin-bottom: 20px;
+}
+.new-client{
+
+}
+.styled-filter {
+  border: 0;
+  line-height: 3.2;
+  padding: 0 20px;
+  /* font-size: 1rem; */
+  text-align: center;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  /* text-shadow: 1px 1px 1px #000; */
+  border-radius: 15px;
+  background-color: #510cc1 ;
+  margin-bottom: 10px;
+}
+.bi-funnel{
+  font-size: 22px;
+  padding-left: 15px;
+}
+.fdg{
+  vertical-align: -8px;
+  font-size: 25px;
+   margin-left:22px;
+   height: 20px;
+   width: 20px;
+}
+.ads{
+  height:30px;
+  width: 52px;
+  border-radius: 15px;
+  background: #f6e4ff;
+  color: black;
+}
+.ads:hover{
+  height:30px;
+  width:52px;
+  background:#510cc1;
+  border-radius: 15px;
+  color: white;
+}
+/* .filter{
+  padding-left: 100px;
+} */
+.profile-btn{
+  background: #510cc1;
+  color: white;
+  border-radius: 15px;
+  border: 1px solid #510cc1;
+}
+.searchbarwdt{
+  width: 1140px;
 }

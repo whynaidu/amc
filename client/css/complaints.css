@@ -94,10 +94,7 @@ input[type=submit]{
 }
 .jkl{
   margin-left: 77px;
-  
   border-radius: 10px;
- 
-  border: 0;
   height: 40px;
   width: 280px;
   background: #f4f6fa;
@@ -126,7 +123,7 @@ p.wwe{
     width: 95%;
   }
   h2{
-    
+     width: 00300px;
     /* text-align: center; */
     margin-left: 100px;
   }
@@ -135,9 +132,99 @@ p.wwe{
     
   }
   .mnj{
+    height: 100%;
+    width: 115%;
     font-size: large;
-    text-align: center;
+    margin-left:-25px;
+    
     /* /* margin-left: 50px; */
   }
-
+  .mkj{
+    margin-left: 0px;
+    margin-top:10px;
+    margin-bottom: 15px;
+  }
+  p.wwe{
+    height: 40px;
+    width: 112px;
+    margin-top: -25px;
+   margin-left: 0px;
+  }
+  .www{
+    margin-left: 0px;
+    height:100px;
+    resize: none;
+    width: 450px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    margin-top: -5px;
+    background: #f4f6fa;
+    border: transparent;
+    padding-left: 10px;
+    padding-top:8px;
+  }
+  input[type=text]{
+    padding-left: -1px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: #f4f6fa;
+    border: transparent;
+    height: 40px;
+    width: 450px;
+  }
+  input[type=number]{
+    padding-left: -1px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background: #f4f6fa;
+    border: transparent;
+    height: 40px;
+    width: 450px;
+  }
+  input[type=submit]{
+    margin-left: 150px;
+    height: 40px;
+    width: 170px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: white;
+    border-radius: 15px;
+   background: #510cc1;
+   border: transparent;
+  }
+  input[type=date]{
+    padding-left: 10px;
+    height: 40px;
+    width: 180px;
+    margin-left: 68px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background: #f4f6fa;
+    border: transparent;
+  }
+  input[type=time]{
+    padding-left: 10px;
+    height: 40px;
+    width: 180px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+   
+    border-radius: 10px;
+    background: #f4f6fa;
+    border: transparent;
+  }
+  .jkl{
+    margin-left: 0px;
+    border-radius: 10px;
+    height: 40px;
+    width: 280px;
+    background: #f4f6fa;
+  }
+  bootstrap-select {
+    width: 530px;
+}
 }
