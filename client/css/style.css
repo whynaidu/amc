@@ -31178,7 +31178,14 @@ button.nnmm{
  text-align: center;
   border: 1px transparent #000;
 }
+
 p.iii{
  margin-top: 2px;
  
+}
+@media screen and (max-width: 540px) {
+  .analytics{
+    width:244px;
+    margin-left:15px;
+  }
 }
