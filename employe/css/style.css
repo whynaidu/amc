@@ -31248,3 +31248,12 @@ border:2px solid #510cc1;
   border-radius: 15px;
   color: white;
 }
+/* .filter{
+  padding-left: 100px;
+} */
+.profile-btn{
+  background: #510cc1;
+  color: white;
+  border-radius: 15px;
+  border: 1px solid #510cc1;
+}
