@@ -27573,7 +27573,7 @@ table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.
     border-color: #333a54; }
 
 table.dataTable thead .sorting {
-  background-position: center right 15px; }
+  background-position: center right 1px; }
 
 .dataTables_wrapper .dataTables_paginate {
   border-radius: 1.25rem; }
@@ -31176,14 +31176,14 @@ border:2px solid #510cc1;
 }
 .asd{
   height:40px;
-  width: 70px;
+  width: 60px;
   border-radius: 20px;
   background: #f6e4ff;
   color: black;
 }
 .asd:hover{
   height:40px;
-  width: 70px;
+  width: 60px;
   background:#510cc1;
   border-radius: 20px;
   color: white;
@@ -31191,7 +31191,7 @@ border:2px solid #510cc1;
 .dfg{
   vertical-align: -8px;
   font-size: 25px;
-   margin-left:22px;
+   margin-left:18px;
    /* color: black; */
 }
 .dfg:hover{
@@ -31261,3 +31261,6 @@ border:2px solid #510cc1;
 .searchbarwdt{
   width: 1140px;
 }
+/* .cmp{
+  border-radius: 15px;
+} */
