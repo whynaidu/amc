@@ -2996,7 +2996,7 @@ input[type="button"].btn-block {
   .input-group > .custom-file {
     position: relative;
     flex: 1 1 auto;
-    width: 250px;
+    width: 1%;
     min-width: 0;
     margin-bottom: 0px; }
     .input-group > .form-control + .form-control,
@@ -31253,6 +31253,12 @@ border:2px solid #510cc1;
   padding-left: 100px;
 } */
 .profile-btn{
+  background: #510cc1;
+  color: white;
+  border-radius: 15px;
+  border: 1px solid #510cc1;
+}
+.profile-btn:hover{
   background: #510cc1;
   color: white;
   border-radius: 15px;
