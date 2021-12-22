@@ -27572,7 +27572,7 @@ table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.
     border-color: #333a54; }
 
 table.dataTable thead .sorting {
-  background-position: center right 15px; }
+  background-position: center right 20px; }
 
 .dataTables_wrapper .dataTables_paginate {
   border-radius: 1.25rem; }
