@@ -833,81 +833,207 @@
 		<!--**********************************
             Content body start
         ***********************************-->
-        <div class="content-body">
-            <!-- row -->
-			<div class="container-fluid">
-				<!-- Add Order -->
-				
-				
-				<!-- </div> -->
-				<div class="row">
-					<div class="col-md-6">
-				 	<a href="new-service.html">
-					<button class="favorite styled"
-         			type="button">
-    				+ Add New Service
-					</button>
-					</a>
-					</div>
-						<div class="col-md-6 d-flex justify-content-end">
-					<li class="nav-item search">
-						<div class="input-group search-bar-mrg-btm">
-							<input type="text" class="form-control" placeholder="Search here...">
-							<div class="input-group-append">
-								<span class="input-group-text"><i class="flaticon-381-search-2"></i></span>
-							</div>
-							</div>
-						</div>
-					</li>
+        
+        <div class="container">
+            <div class="content-body ">
+            <form class="card ll" style="
+                                width: 148%;
+                                margin-left: -170px;
+                                margin-top: 36px;
+                                padding-bottom: 30px;">
+                        
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-md-6">
+                                
+                                <div class="row g-3 align-items-center">
+                                    <div class="col-md-2 ">
+                                      <label for="inputPassword6" class="col-form-label">Company Name</label>
+                                      
+                                    </div>
+                                    <div class="col-md-6">
+                                      <select id="inputPassword6" class="srvc-drpdwn" aria-describedby="passwordHelpInline">
+                                          <option>asdfghfds</option>
+                                          <option>asdfghfds</option>
+                                          <option>asdfghfds</option>
+                                          <option>asdfghfds</option>
+                                          </select>
+                                    </div>
+                                    <div class="col-6">
+                                      <span id="passwordHelpInline" class="form-text">
+                                      </span>
+                                    </div>
+                                  </div>
 
-					
-				</div>
-				</div>
-                    <div class="col-xl-12">
-						<div class="tab-content">
-							<div id="All" class="tab-pane active fade show">
-								<div class="table-responsive">
-                                    <table id="example2" class="table card-table display dataTablesCard">
-										<thead>
-                                            <tr>
-												<th>DATE</th>
-                                                <th>DATE OF VISIT</th>
-                                                <!-- <th>ADDRESS</th> -->
-                                                <th>CUSTOMER NAME</th>
-                                                <th>ENGINEER NAME</th>
-												<th>ACTION</th>
-												<!-- <th>TYPE</th>
-                                                <th>ACTION</th> -->
-                                               
-                                            </tr>
-                                        </thead>
-										<tbody>
-										
-											<tr>
-												<td>12/03/2020</td>
-												<td>11/03/2020</td>
-												<td>MAHESH. P. NIWATE</td>
-												<td>SANKET CHINCHAWADE</td>
-												<td>
-													<div class="bt3">
-														<!-- <label class="asd" style="padding: 3px 1px;" type="button" > <i class="bi bi-cash dfg"></i></label> -->
-														<!-- <label class="asd" style="padding: 3px 1px;" type="button" > <i class="bi bi-file-pdf dfg"></i></label> -->
-														<label class="asd" style="padding: 3px 0px;" type="button" > <i class="bi bi-eye dfg"></i></label>
-														<!-- <label class="asd" style="padding: 3px 1px;" type="button" > <i class="bi bi-pencil dfg"></i></label> -->
-														<!-- <label class="asd" style="padding: 5px 1px;" type="button" > <i class="bi bi-arrow-left-right dfg"></i></label>													  </div> -->
-												</td>
-											
-											</tr>
-											</tbody>
-									</table>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
+
+            <!-- <div class="row g-3 align-items-center">
+              <div class="col-md-2 ">
+                <label for="inputPassword6" class="col-form-label">Company Name</label>
+                
+              </div>
+              <div class="col-md-6">
+                <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+              </div>
+              <div class="col-6">
+                <span id="passwordHelpInline" class="form-text">
+                </span>
+              </div>
+            </div> -->
+            <div class="row g-3 align-items-center">
+              <div class="col-md-2">
+                <label for="inputPassword6" class="col-form-label">Date Of Visit</label>
+              </div>
+              <div class="col-md-6">
+                <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+              </div>
+              <div class="col-6">
+                <span id="passwordHelpInline" class="form-text">
+                </span>
+              </div>
             </div>
-        </div>
+            <div class="row g-3 align-items-center">
+              <div class="col-md-2">
+                <label for="inputPassword6" class="col-form-label">Engineer Name</label>
+              </div>
+              <div class="col-md-6">
+                <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+              </div>
+              <div class="col-6">
+                <span id="passwordHelpInline" class="form-text">
+                </span>
+              </div>
+            </div>
+            <div class="row g-3 align-items-center">
+              <div class="col-md-2">
+                <label for="inputPassword6" class="col-form-label">
+                    Description
+                </label>
+              </div>
+              <div class="col-md-6">
+                <textarea cols="120" rows="4" id="inputPassword6" class="srvc-dcrp" aria-describedby=""></textarea>
+              </div>
+              <div class="col-6">
+                <span id="passwordHelpInline" class="form-text">
+                </span>
+              </div>
+            </div> 
+            <!-- <div class="row g-3 align-items-center">
+              <div class="col-md-2">
+                <label for="inputPassword6" class="col-form-label">Phone</label>
+              </div>
+              <div class="col-md-6">
+                <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+              </div>
+              <div class="col-6">
+                <span id="passwordHelpInline" class="form-text">
+                </span>
+              </div>
+            </div> -->
+            <!-- <button type="submit" class="btn btn-primary col-4" style="width: 90px;height: 54px;padding: 15px 4px;">Save User</button>
+            <button type="submit" class="btn btn-danger col-3"  style="width: 156px;font-size: 16px;height: 53px;padding: 2px 0px;">Change Password</button> -->
+            
+            </div>
+                              <div class="col-md-6" style="height: 150px;">
+            <div class="row g-3 align-items-center">
+              <div class="col-md-2"style="padding-left: 63px;">
+                <label for="inputPassword6" class="col-form-label">Date</label>
+              </div>
+              <div class="col-md-6">
+                <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+              </div>
+              <div class="col-6">
+                <span id="passwordHelpInline" class="form-text">
+                </span>
+              </div>
+            </div>
+            <div class="row g-3 align-items-center">
+              <div class="col-md-2" style="padding-left: 63px;">
+                <label for="inputPassword6" class="col-form-label">Type</label>
+              </div>
+              <div class="col-md-6">
+                <select id="inputPassword6" class="srvc-drpdwn" aria-describedby="passwordHelpInline">
+                    <option>Desktop</option>
+                    <option>Router</option>
+                    <option>CCTV</option>
+                    <option>Laptop</option>
+                    </select>
+              </div>
+              <div class="col-6">
+                <span id="passwordHelpInline" class="form-text">
+                </span>
+              </div>
+            </div>
+            <!-- <div class="row g-3 align-items-center">
+              <div class="col-md-2">
+                <label for="inputPassword6" class="col-form-label">City</label>
+              </div>
+              <div class="col-md-6">
+                <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+              </div>
+              <div class="col-6">
+                <span id="passwordHelpInline" class="form-text">
+                </span>
+              </div>
+            </div> -->
+            <!-- <div class="row g-3 align-items-center">
+              <div class="col-md-2">
+                <label for="inputPassword6" class="col-form-label">
+                    Email
+                </label>
+              </div>
+              <div class="col-md-6">
+                <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+              </div>
+              <div class="col-6">
+                <span id="passwordHelpInline" class="form-text">
+                </span>
+              </div>
+            </div> -->
+            <!-- <div class="row g-3 align-items-center">
+              <div class="col-md-2">
+                <label for="inputPassword6" class="col-form-label">Address</label>
+              </div>
+              <div class="col-md-6">
+                <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+              </div>
+              <div class="col-6">
+                <span id="passwordHelpInline" class="form-text">
+                </span>
+              </div> -->
+            </div>
+            <!-- <div class="row g-3 align-items-center">
+                <div class="col-md-2">
+                  <label for="inputPassword6" class="col-form-label">Pincode</label>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+                <div class="col-6">
+                  <span id="passwordHelpInline" class="form-text">
+                  </span>
+                </div>
+              </div> -->
+            <!-- <button type="submit" class="btn btn-primary col-4" style="width: 90px;height: 54px;padding: 15px 4px;">Save User</button>
+            <button type="submit" class="btn btn-danger col-3"  style="width: 156px;font-size: 16px;height: 53px;padding: 2px 0px;">Change Password</button> -->
+            
+            </div>
+            </div>
+            </div>
+            <br/>
+            <div class="tyui">
+                <button type="submit" class="btn btn-primary col-4 kk" style="width: 159px;height: 44px;padding: 11px 4px;">Save New Client</button>
+                <!-- <button type="submit" class="btn btn-danger col-3"  style="width: 156px;font-size: 16px;height: 53px;padding: 2px 0px;">Change Password</button>	 -->
+            </div>
+            </div>
+            
+            </form>
+                                </div>
+
+
+
+
+            </div>
+        
         <!--**********************************
             Content body end
         ***********************************-->

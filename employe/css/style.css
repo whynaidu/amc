@@ -31270,3 +31270,24 @@ border:2px solid #510cc1;
 /* .cmp{
   border-radius: 15px;
 } */
+.srvc-drpdwn{
+    height: 57px;
+    width: 417px;
+    margin-left: 12px;
+    border-radius: 9px;
+    padding-left: 10px;
+    border: 1px solid #510cc1;
+}
+
+.srvc-drpdwn:hover{
+border: 2px solid rgb(81, 12, 193);
+}
+.srvc-dcrp{
+  margin-left: 12px;
+  border-radius: 9px;
+  padding-left: 10px;
+  border: 1px solid #510cc1;
+}
+.srvc-dcrp:hover{
+  border: 2px solid rgb(81, 12, 193);
+}
