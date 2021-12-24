@@ -31154,5 +31154,11 @@ color:white;
 }
 
 .searchbarwdt{
-  width: 1140px;
+  width: 100%;
+  margin:12px 12px;
+}
+
+.input-group-text {
+border-bottom-left-radius: 0px;
+border-top-left-radius: 0px;
 }
