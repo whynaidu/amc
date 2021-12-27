@@ -341,7 +341,7 @@ a {
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #fe2002;
+    color: #510cc1;
     text-decoration: underline; }
 
 a:not([href]):not([class]) {
@@ -2996,7 +2996,7 @@ input[type="button"].btn-block {
   .input-group > .custom-file {
     position: relative;
     flex: 1 1 auto;
-    width: 250px;
+    width: 1%;
     min-width: 0;
     margin-bottom: 0px; }
     .input-group > .form-control + .form-control,
@@ -27573,7 +27573,7 @@ table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.
     border-color: #333a54; }
 
 table.dataTable thead .sorting {
-  background-position: center right 15px; }
+  background-position: center right 1px; }
 
 .dataTables_wrapper .dataTables_paginate {
   border-radius: 1.25rem; }
@@ -31146,6 +31146,7 @@ border:2px solid #510cc1;
 .ffff{
   margin-left: 0px;
   margin-bottom: 10px;
+  width
 }
 .form-control{
   width: 165%;
@@ -31175,14 +31176,14 @@ border:2px solid #510cc1;
 }
 .asd{
   height:40px;
-  width: 70px;
+  width: 60px;
   border-radius: 20px;
   background: #f6e4ff;
   color: black;
 }
 .asd:hover{
   height:40px;
-  width: 70px;
+  width: 60px;
   background:#510cc1;
   border-radius: 20px;
   color: white;
@@ -31190,7 +31191,7 @@ border:2px solid #510cc1;
 .dfg{
   vertical-align: -8px;
   font-size: 25px;
-   margin-left:22px;
+   margin-left:18px;
    /* color: black; */
 }
 .dfg:hover{
@@ -31247,4 +31248,49 @@ border:2px solid #510cc1;
   background:#510cc1;
   border-radius: 15px;
   color: white;
+}
+/* .filter{
+  padding-left: 100px;
+} */
+.profile-btn{
+  background: #510cc1;
+  color: white;
+  border-radius: 15px;
+  border: 1px solid #510cc1;
+}
+.profile-btn:hover{
+  background: #510cc1;
+  color: white;
+  border-radius: 15px;
+  border: 1px solid #510cc1;
+}
+.searchbarwdt{
+  width: 100%;
+	margin: 12px 12px;
+
+}
+/* .cmp{
+  border-radius: 15px;
+} */
+.srvc-drpdwn{
+    height: 57px;
+    width: 164%;
+    margin-left: 12px;
+    border-radius: 9px;
+    padding-left: 10px;
+    border: 1px solid #510cc1;
+}
+
+.srvc-drpdwn:hover{
+border: 2px solid rgb(81, 12, 193);
+}
+.srvc-dcrp{
+  margin-left: 12px;
+  border-radius: 9px;
+  padding-left: 10px;
+	resize: none;
+  border: 1px solid #510cc1;
+}
+.srvc-dcrp:hover{
+  border: 2px solid rgb(81, 12, 193);
 }
