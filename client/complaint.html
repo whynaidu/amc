@@ -740,7 +740,8 @@
             <!-- row -->
 			<div class="container-fluid">
 				<div class="row">
-			    <button class="btn_add" onclick="location.href='AddComplaint.html'">+ Add Complaints</button>
+			    <!-- <button class="btn_add" onclick="location.href='AddComplaint.html'">+ Add Complaints</button> -->
+				<button class="btn_add" onclick="" data-bs-toggle="modal" data-bs-target="#Modal">+ Add Complaints</button>
 			     <div class="col-md-6 d-flex justify-content-end" style="left: 350px;">
 				<li class="nav-item search">
 					<div class="input-group zx">
@@ -748,10 +749,47 @@
 						<div class="input-group-append">
 							<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
 						</div>
-						</div>
 					</div>
 				</li>
 			</div>
+		</div>
+			</div>
+			<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				  <div class="modal-content">
+					<h2>Complaint Form</h2>
+			  <div class="complaint_form">
+					<div class="form_group">
+					  <label for="Complaint Type :"> Complaint Type :</label>
+				     <div class="comp_dropdown">
+					     <select class="form_select default-select"id="type" name="type">
+				             <option value="Desktop" selected>Desktop</option>
+			                 <option value="Laptop">Laptop</option>
+			                 <option value="CCTV">CCTV</option> 
+                              <option value="Routers">Routers</option>
+						  </select>
+					  </div>
+					</div><br>
+					<div class="form_group">
+				       <p class="lbl_des">Description :</p>
+				        <textarea class="comp_des"  id="c_des" placeholder="Write here..." name="Description">
+						</textarea>
+					</div><br>
+					<div class="form_group">
+						<label for="Contact Name :">Contact Name :</label>
+					   <input type="text" placeholder="Name" id="c_name" name="c_name">
+					</div><br>
+					<div class="form_group">
+					   <label for="Contact No :"> Contact No :</label>
+					   <input type="number" id="c_number" name="c_number" placeholder="0123-456-789">
+					</div><br>
+					<div class="form_group">
+				      <input type="submit">
+					</div>
+			       </div>
+				  </div>
+				</div>
+			  </div>
 			<!-- Add Order -->
 				<div class="modal fade" id="addOrderModalside">
 					<div class="modal-dialog" role="document">
