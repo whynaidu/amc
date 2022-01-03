@@ -23433,10 +23433,10 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 .bootstrap-select {
   margin-bottom: 0; }
   .bootstrap-select .btn {
-    border: 1px solid #f0f1f5 !important;
+    border: 0px solid #f0f1f5 !important;
     background-color: transparent !important;
     font-weight: 400;
-    color: #7e7e7e !important; }
+    color: #7e7e7e !important;}
     [data-theme-version="dark"] .bootstrap-select .btn {
       border-color: #333a54 !important; }
     .bootstrap-select .btn:active, .bootstrap-select .btn:focus, .bootstrap-select .btn:hover {
@@ -31029,9 +31029,6 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 
   font-size: 60px;
 }
-.search {
-
-}
 .styled {
   border: 0;
   line-height: 3.2;
@@ -31073,9 +31070,6 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 }
 .dd{
   color: #510cc1;
-}
-.jh{
-  
 }
 .fff{
   margin-left: 560px;
@@ -31146,10 +31140,7 @@ border:2px solid #510cc1;
 .ffff{
   margin-left: 0px;
   margin-bottom: 10px;
-  width
-}
-.form-control{
-  width: 165%;
+ 
 }
 
 .tyui{
@@ -31194,9 +31185,6 @@ border:2px solid #510cc1;
    margin-left:18px;
    /* color: black; */
 }
-.dfg:hover{
-  /* color: white; */
-}
 .bi-pencil{
   font-size: 24px;
 }
@@ -31206,9 +31194,6 @@ border:2px solid #510cc1;
 .search-bar{
   width: 180px;
   margin-bottom: 20px;
-}
-.new-client{
-
 }
 .styled-filter {
   border: 0;
@@ -31293,4 +31278,15 @@ border: 2px solid rgb(81, 12, 193);
 }
 .srvc-dcrp:hover{
   border: 2px solid rgb(81, 12, 193);
+}
+.btn_ad{
+  height:50px;
+  width: 165px;
+  border-radius: 44px;
+  background: #510cc1;
+  color: #fff;
+  border-radius: 10px;
+  text-align:centre;
+  margin-left: 27px;
+  border:transparent;
 }
