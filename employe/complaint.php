@@ -841,7 +841,7 @@ if (mysqli_num_rows($result)>0){
 			<div class="container-fluid">
 				<div class="row">
 			    <!-- <button class="btn_add" onclick="location.href='AddComplaint.php'">+ Add Complaints</button> -->
-				<button class="btn_ad" style="height: 50px;width: 165px; border-radius: 44px; background: #510cc1;color: #fff;border-radius: 10px;text-align: centre; margin-left: 27px; border: transparent;"onclick="" data-bs-toggle="modal" data-bs-target="#Modal">+ Add Complaints</button>
+				<button class="btn_ad"  data-bs-toggle="modal" data-bs-target="#Modal">+ Add Complaints</button>
 			     <div class="col-md-6 d-flex justify-content-end" >
 				<li class="nav-item search">
 					<div class="input-group zx">
