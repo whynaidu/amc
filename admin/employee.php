@@ -567,7 +567,7 @@
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
                             <div class="dashboard_bar">
-								EMPLOPYEES
+								Employees
                             </div>
                         </div>
                         <ul class="navbar-nav header-right">
@@ -850,7 +850,7 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content ">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Add User</h5>
+        <h5 class="modal-title" id="staticBackdropLabel">Add Employee</h5>
  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"  style="
     background: transparent;
     border: none;
