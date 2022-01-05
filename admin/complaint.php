@@ -914,7 +914,7 @@ if (mysqli_num_rows($result)>0){
 			  </div>
 				<div class="row">
 					<div class="col-xl-12 mx-12 ">
-						<div class="tab-content">
+						<div class="tab-content" style>
 							<div id="All" class="tab-pane active fade show">
 								<div class="table-responsive">
                                     <table id="example2" class="table card-table display dataTablesCard">
