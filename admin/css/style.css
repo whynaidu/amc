@@ -22270,7 +22270,7 @@ svg text {
   .form-control:hover, .form-control:focus, .form-control.active {
     box-shadow: none;
     background: #fff;
-    color: #B1B1B1; }
+    color: black; }
 
 .input-rounded {
   border-radius: 100px; }
@@ -31162,3 +31162,4 @@ color:white;
 border-bottom-left-radius: 0px;
 border-top-left-radius: 0px;
 }
+
