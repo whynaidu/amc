@@ -904,7 +904,7 @@
 	
       <div class="modal-footer">
         <button type="button" class="btn bt" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn bt">Save user</button>
+        <button type="button" class="btn bt">Save Employee</button>
       </div>
     </div>
   </div>
