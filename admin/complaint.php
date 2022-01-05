@@ -845,7 +845,6 @@ if (mysqli_num_rows($result)>0){
 						</div>
 					</div>
 				</div>
-<<<<<<< HEAD:admin/complaint.html
 		<div class="row">
 					<div class="col-md-6">
 					<button class="favorite styled "
@@ -860,26 +859,6 @@ if (mysqli_num_rows($result)>0){
 				<div class="modal-dialog">
 				  <div class="modal-content">
 					<h2 style="text-align: center;">Complaint Form</h2>
-=======
-				<div class="row">
-			    <!-- <button class="btn_add" onclick="location.href='AddComplaint.php'">+ Add Complaints</button> -->
-				<button class="btn_ad" STYLE="height: 50px;width: 165px; border-radius: 44px; background: #510cc1;color: #fff;border-radius: 10px;text-align: centre; margin-left: 27px; border: transparent;"onclick="" data-bs-toggle="modal" data-bs-target="#Modal">+ Add Complaints</button>
-			        <div class="col-md-6 d-flex justify-content-end" style="left: 350px;">
-				        <li class="nav-item search">
-					      <div class="input-group zx">
-						       <input type="text" class="form-control" placeholder="Search here...">
-						       <div class="input-group-append">
-							       <span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
-						     </div>
-					     </div>
-				        </li>
-			     </div>
-		     </div>
-			 <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="Modal" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<h2>Complaint Form</h2>
->>>>>>> d7358354903b2babc00f5f1050f4e02d3cf1d2db:admin/complaint.php
 			  <div class="complaint_form">
 					<div class="form_group">
 					  <label for="Complaint Type :"> Complaint Type :</label>
@@ -894,12 +873,8 @@ if (mysqli_num_rows($result)>0){
 					</div><br>
 					<div class="form_group">
 				       <p class="lbl_des">Description :</p>
-<<<<<<< HEAD:admin/complaint.html
 	
 				        <textarea class="comp_des" id="c_des" placeholder="Write here..." name="Description">
-=======
-				        <textarea class="comp_des"  id="c_des" placeholder="Write here..." name="Description">
->>>>>>> d7358354903b2babc00f5f1050f4e02d3cf1d2db:admin/complaint.php
 						</textarea>
 					</div><br>
 					<div class="form_group">
@@ -910,16 +885,11 @@ if (mysqli_num_rows($result)>0){
 					   <label for="Contact No :"> Contact No :</label>
 					   <input type="number" id="c_number" name="c_number" placeholder="0123-456-789">
 					</div><br>
-<<<<<<< HEAD:admin/complaint.html
 					<div class="form_group" style="text-align: center;">
-=======
-					<div class="form_group">
->>>>>>> d7358354903b2babc00f5f1050f4e02d3cf1d2db:admin/complaint.php
 				      <input type="submit">
 					</div>
 			       </div>
 				  </div>
-<<<<<<< HEAD:admin/complaint.html
 				</div>
 			  </div>
 
@@ -940,8 +910,6 @@ if (mysqli_num_rows($result)>0){
 					</li>
 
 					
-=======
->>>>>>> d7358354903b2babc00f5f1050f4e02d3cf1d2db:admin/complaint.php
 				</div>
 			  </div>
 				<div class="row">
