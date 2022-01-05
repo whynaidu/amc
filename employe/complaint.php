@@ -9,21 +9,18 @@ if (mysqli_num_rows($result)>0){
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Tectignis-AMC Complaints Emp</title>
-
-    
-	
+  <title>Tectignis IT Solutions-AMC Emp Dashboard</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
 	<link rel="stylesheet" href="./vendor/chartist/css/chartist.min.css">
     <link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
 	<!-- Datatable -->
+	
     <link href="./vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
-	<link href="./css/complaints.css" rel="stylesheet">
-	<link rel="stylesheet" href="./css/complaints.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="./css/complaint.css">
 </head>
 <body>
 
@@ -53,7 +50,8 @@ if (mysqli_num_rows($result)>0){
             <a href="index.php" class="brand-logo">
                 <!-- <img class="logo-abbr" src="./images/logo.png" alt=""> -->
                 <img class="logo-compact" src="./images/logo-text.png" alt="">
-				<img class="brand-title" src="./images/tectiginis.jpg"  style="width: 255px;  height: 100px;" alt="Tectignis IT Solutions">            </a>
+                    <img class="brand-title" src="/1637733681043_TM LOGO.jpg"  style="width: 255px;  height: 100px;" alt="Tectignis IT Solutions">
+            </a>
 
             <div class="nav-control">
                 <div class="hamburger">
@@ -86,7 +84,7 @@ if (mysqli_num_rows($result)>0){
 					<div class="tab-pane fade active show" id="chat" role="tabpanel">
 						<div class="card mb-sm-3 mb-md-0 contacts_card dz-chat-user-box">
 							<div class="card-header chat-list-header text-center">
-								<a href="javascript:void(0)"><i class="bi bi-chat-left-dots"></i></a>
+								<a href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect fill="#000000" x="4" y="11" width="16" height="2" rx="1"/><rect fill="#000000" opacity="0.3" transform="translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) " x="4" y="11" width="16" height="2" rx="1"/></g></svg></a>
 								<div>
 									<h6 class="mb-1">Chat List</h6>
 									<p class="mb-0">Show All</p>
@@ -576,21 +574,22 @@ if (mysqli_num_rows($result)>0){
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
                             <div class="dashboard_bar">
-								Complaints
+							COMPLAINTS
                             </div>
                         </div>
                         <ul class="navbar-nav header-right">
-							<!-- <li class="nav-item">
-								<div class="input-group search-area d-xl-inline-flex d-none">
+							<li class="nav-item">
+								<!-- <div class="input-group search-area d-xl-inline-flex d-none">
 									<input type="text" class="form-control" placeholder="Search here...">
 									<div class="input-group-append">
 										<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
 									</div>
-								</div>
-							</li> -->
+								</div> -->
+							</li>
 							<li class="nav-item dropdown notification_dropdown">
                                 <a class="nav-link  ai-icon" href="javascript:void(0)" role="button" data-toggle="dropdown">
-                                    <i class="bi bi-bell"></i>
+                                    <i class="bi bi-bell zoom"></i>
+
 									<div class="pulse-css"></div>
                                 </a>
                                 <div class="dropdown-menu rounded dropdown-menu-right">
@@ -708,125 +707,101 @@ if (mysqli_num_rows($result)>0){
         <!--**********************************
             Sidebar start
         ***********************************-->
-		<div class="deznav">
+          <div class="deznav">
             <div class="deznav-scroll">
 				<a href="javascript:void(0)" class="add-menu-sidebar" data-toggle="modal" data-target="#addOrderModalside" >+ New Event</a>
 				<ul class="metismenu" id="menu">
-                    <li><a class="" href="index.php" aria-expanded="false">
+                    <li><a class=" ai-icon" href="index.php" aria-expanded="false">
 							<i class="flaticon-381-networking"></i>
 							<span class="nav-text">Dashboard</span>
 						</a>
-                        <!-- <ul aria-expanded="false">
-							<li><a href="index.php">Dashboard</a></li>
-							<li><a href="event.php">Event</a></li>
-							<li><a href="event-detail.php">Event Detail</a></li>
-							<li><a href="customers.php">Customers</a></li>
-							<li><a href="analytics.php">Analytics</a></li>
-							<li><a href="reviews.php">Reviews</a></li>
-						</ul> -->
+                       
                     </li>
-                    <li><a class="" href="client.php" aria-expanded="false">
-						<i class="bi bi-people-fill"></i>
-							<span class="nav-text">Client</span>
+                    <li><a class="ai-icon" href="employee.php" aria-expanded="false">
+													<i class="bi bi-person-fill"></i>
+							<span class="nav-text">Employee</span>
 						</a>
-                        
+                      
                     </li>
-                    <li><a class="" href="quotation.php" aria-expanded="false">
-						<i class="bi bi-card-text"></i>
+         <li><a class="ai-icon" href="client.php" aria-expanded="false">
+														<i class="bi bi-people-fill"></i>
+							<span class="nav-text">Clients</span>
+						</a>
+
+                    <li><a class=" ai-icon" href="quotation.php" aria-expanded="false">
+							<i class="bi bi-card-text"></i>							
 							<span class="nav-text">Quotation</span>
 						</a>
-                        <!-- <ul aria-expanded="false">
-                            <li><a href="./chart-flot.php">Flot</a></li>
-                            <li><a href="./chart-morris.php">Morris</a></li>
-                            <li><a href="./chart-chartjs.php">Chartjs</a></li>
-                            <li><a href="./chart-chartist.php">Chartist</a></li>
-                            <li><a href="./chart-sparkline.php">Sparkline</a></li>
-                            <li><a href="./chart-peity.php">Peity</a></li>
-                        </ul> -->
+                  
                     </li>
-                    <li><a class="" href="sales.php" aria-expanded="false">
-						<i class="bi bi-bar-chart"></i>
-							<span class="nav-text">Sales</span>
+                    <li><a class=" ai-icon" href="purchase.php" aria-expanded="false">
+												<i class="bi bi-cash-stack"></i>
+							<span class="nav-text">Purchase</span>
 						</a>
-                        <!-- <ul aria-expanded="false">
-                            <li><a href="./ui-accordion.php">Accordion</a></li>
-                            <li><a href="./ui-alert.php">Alert</a></li>
-                            <li><a href="./ui-badge.php">Badge</a></li>
-                            <li><a href="./ui-button.php">Button</a></li>
-                            <li><a href="./ui-modal.php">Modal</a></li>
-                            <li><a href="./ui-button-group.php">Button Group</a></li>
-                            <li><a href="./ui-list-group.php">List Group</a></li>
-                            <li><a href="./ui-media-object.php">Media Object</a></li>
-                            <li><a href="./ui-card.php">Cards</a></li>
-                            <li><a href="./ui-carousel.php">Carousel</a></li>
-                            <li><a href="./ui-dropdown.php">Dropdown</a></li>
-                            <li><a href="./ui-popover.php">Popover</a></li>
-                            <li><a href="./ui-progressbar.php">Progressbar</a></li>
-                            <li><a href="./ui-tab.php">Tab</a></li>
-                            <li><a href="./ui-typography.php">Typography</a></li>
-                            <li><a href="./ui-pagination.php">Pagination</a></li>
-                            <li><a href="./ui-grid.php">Grid</a></li>
-
-                        </ul> -->
+                 
                     </li>
-                    <li><a class="" href="amc.php" aria-expanded="false">
-						<i class="bi bi-shield-minus"></i>
+                    <li><a class=" ai-icon" href="amc.php" aria-expanded="false">
+							<i class="bi bi-shield-minus"></i>
 							<span class="nav-text">AMC</span>
 						</a>
-                        <!-- <ul aria-expanded="false">
-                            <li><a href="./uc-select2.php">Select 2</a></li>
-                            <li><a href="./uc-nestable.php">Nestedable</a></li>
-                            <li><a href="./uc-noui-slider.php">Noui Slider</a></li>
-                            <li><a href="./uc-sweetalert.php">Sweet Alert</a></li>
-                            <li><a href="./uc-toastr.php">Toastr</a></li>
-                            <li><a href="./map-jqvmap.php">Jqv Map</a></li>
-                            <li><a href="./uc-lightgallery.php">Lightgallery</a></li>
-                        </ul> -->
+                  
                     </li>
                     <li><a href="complaint.php" class="ai-icon" aria-expanded="false">
 						<i class="bi bi-envelope-exclamation"></i>
 							<span class="nav-text">Complaint</span>
 						</a>
 					</li>
-                    <li><a class="" href="service.php" aria-expanded="false">
+                    <li><a class=" ai-icon" href="servicelist.php" aria-expanded="false">
 							<i class="flaticon-381-notepad"></i>
-							<span class="nav-text">Service</span>
+							<span class="nav-text">Services</span>
 						</a>
-                        
+                     
                     </li>
-                    <!-- <li><a class="" href="javascript:void()" aria-expanded="false">
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-network"></i>
 							<span class="nav-text">Report</span>
 						</a>
-                    <ul aria-expanded="false">
-                            <li><a href="table-bootstrap-basic.php">Bootstrap</a></li>
-                            <li><a href="table-datatable-basic.php">Datatable</a></li>
-                        </ul> -->
-                    <!-- </li> --> 
-                    <!-- <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-layer-1"></i>
-							<span class="nav-text">Pages</span>
+                        <ul aria-expanded="false">
+                            <li><a href="sales.php">Sales</a></li>
+                            <li><a href="complaintlist.php">Complaint List</a></li>
+                        </ul>
+                    </li>
+               
+                    <li><a class="ai-icon" href="catogries.php" aria-expanded="false">
+							<i class="bi bi-folder"></i>
+							<span class="nav-text">Catogries</span>
+						</a>
+						
+                    </li>
+               
+                    <li><a class=" ai-icon" href="discount.php" aria-expanded="false">
+					<i class="bi bi-percent"></i>
+							<span class="nav-text">Discount </span>
+						</a>
+                 
+                    </li>
+                    <li><a class=" ai-icon" href="emailsetup.php" aria-expanded="false">
+							<i class="bi bi-envelope-plus-fill"></i>
+							<span class="nav-text">Email Configurations </span>
+						</a>
+                 
+                    </li>
+					     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+						<i class="bi bi-gear-wide-connected"></i>
+							<span class="nav-text">Setting</span>
 						</a>
                         <ul aria-expanded="false">
-                            <li><a href="./page-register.php">Register</a></li>
-                            <li><a href="./page-login.php">Login</a></li>
-                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Error</a>
-                                <ul aria-expanded="false">
-                                    <li><a href="./page-error-400.php">Error 400</a></li>
-                                    <li><a href="./page-error-403.php">Error 403</a></li>
-                                    <li><a href="./page-error-404.php">Error 404</a></li>
-                                    <li><a href="./page-error-500.php">Error 500</a></li>
-                                    <li><a href="./page-error-503.php">Error 503</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./page-lock-screen.php">Lock Screen</a></li>
+                            <li><a href="companyprofile.php">Company profile</a></li>
+                            <li><a href="tax.php">Tax</a></li>
+                            <li><a href="historylog.php">History Log</a></li>
+                          
                         </ul>
-                    </li> -->
+                    </li>
+
                 </ul>
-				<!-- <div class="copyright">
-					<p><strong>Acara Ticketing Dashboard</strong> © 2021 All Rights Reserved</p>
-					<p>Made with <span class="heart"></span> by Tectignis IT Solutions</p>
-				</div> -->
+				<div class="copyright">
+			
+				</div>
 			</div>
         </div>
         <!--**********************************
@@ -839,25 +814,51 @@ if (mysqli_num_rows($result)>0){
         <div class="content-body">
             <!-- row -->
 			<div class="container-fluid">
-				<div class="row">
-			    <!-- <button class="btn_add" onclick="location.href='AddComplaint.php'">+ Add Complaints</button> -->
-				<button class="btn_add"  data-bs-toggle="modal" data-bs-target="#Modal">+ Add Complaints</button>
-			     <div class="col-md-6 d-flex justify-content-end" >
-				<li class="nav-item search">
-					<div class="input-group ">
-						<input type="text" class="form-control" placeholder="Search here...">
-						<div class="input-group-append">
-							<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
+				<!-- Add Order -->
+				<div class="modal fade" id="addOrderModalside">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Add Event</h5>
+								<button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<form>
+									<div class="form-group">
+										<label class="text-black font-w500">Event Name</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="form-group">
+										<label class="text-black font-w500">Event Date</label>
+										<input type="date" class="form-control">
+									</div>
+									<div class="form-group">
+										<label class="text-black font-w500">Description</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="form-group">
+										<button type="button" class="btn btn-primary">Create</button>
+									</div>
+								</form>
+							</div>
 						</div>
 					</div>
-				</li>
-			</div>
-		</div>
-			</div>
-			<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				</div>
+		<div class="row">
+					<div class="col-md-6">
+					<button class="favorite styled "
+         			type="button"  data-bs-toggle="modal" data-bs-target="#Modal">
+    				+ Add New Complaints
+					</button>
+						<!-- <button class="btn_add" onclick="" data-bs-toggle="modal" data-bs-target="#Modal">+ Add Complaints</button> -->
+					
+
+<!-- Modal -->
+	<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
 				  <div class="modal-content">
-					<h1>Complaint Form</h1>
+					<h2 style="text-align: center;">Complaint Form</h2>
 			  <div class="complaint_form">
 					<div class="form_group">
 					  <label for="Complaint Type :"> Complaint Type :</label>
@@ -872,7 +873,8 @@ if (mysqli_num_rows($result)>0){
 					</div><br>
 					<div class="form_group">
 				       <p class="lbl_des">Description :</p>
-				        <textarea class="comp_des"  id="c_des" placeholder="Write here..." name="Description">
+	
+				        <textarea class="comp_des" id="c_des" placeholder="Write here..." name="Description">
 						</textarea>
 					</div><br>
 					<div class="form_group">
@@ -883,30 +885,49 @@ if (mysqli_num_rows($result)>0){
 					   <label for="Contact No :"> Contact No :</label>
 					   <input type="number" id="c_number" name="c_number" placeholder="0123-456-789">
 					</div><br>
-					<div class="form_group">
+					<div class="form_group" style="text-align: center;">
 				      <input type="submit">
 					</div>
 			       </div>
 				  </div>
 				</div>
 			  </div>
-                    <div class="col-xl-12">
-						<div class="tab-content">
+
+</div>
+
+					
+                        
+
+						<div class="col-md-6 d-flex justify-content-end">
+					<li class="nav-item search2">
+						<div class="input-group ">
+							<input type="text" class="form-control" placeholder="Search here..." style="background:white">
+							<div class="input-group-append">
+								<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
+							</div>
+							</div>
+						</div>
+					</li>
+
+					
+				</div>
+			  </div>
+				<div class="row">
+					<div class="col-xl-12 mx-12 ">
+						<div class="tab-content" style = "margin:20px">
 							<div id="All" class="tab-pane active fade show">
 								<div class="table-responsive">
                                     <table id="example2" class="table card-table display dataTablesCard">
 										<thead>
                                             <tr>
-												<th>COMPLAINT NO.</th>
+                                                <th>COMPLAINT NO.</th>
                                                 <th>CLIENT NAME</th>
-                                                <!-- <th>ADDRESS</th> -->
                                                 <th>MOBILE NO.</th>
                                                 <th>DATE</th>
-												<th>TIME</th>
+                                                <th>TIME</th>
                                                 <th>STATUS</th>
                                                 <th>ASSIGNED TO</th>
-                                                <th>ACTION</th>
-                                               
+                                            <th>Action</th>
                                             </tr>
                                         </thead>
 										<tbody>
@@ -915,59 +936,603 @@ if (mysqli_num_rows($result)>0){
 											while($row = mysqli_fetch_array($result)) {
 											?>
 											<tr>
-												    <td><?php echo $row["complaint_no"]; ?></td>
-                                                    <td>MAHESH. P. NIWATE</td>
-                                                    <td>9001582656</td>
-                                                    <td><?php echo $row["date"]; ?></td>
-                                                    <td><br><?php echo $row["time"]; ?></td>
-                                                    <td><?php echo $row["status"]; ?></td>
-                                                    <td>SANKET CHINCHAWADE</td>
-                                                    <td>
-														<div class="bt3"> <!-- Button trigger modal -->
-														
-															
-															<!-- Modal -->
-															<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-															  <div class="modal-dialog">
-																<div class="modal-content">
-																  <div class="modal-header">
-																	<h5 class="modal-title" id="staticBackdropLabel">Complaint Description</h5>
-																	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="
-																	background: transparent;
-																	border: none;"><i class="bi bi-x" style="font-size: 25px;"></i></button>
-																  </div>
-																  <div class="modal-body">
-																	Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe asperiores, accusamus quam quos perferendis dolorum nulla minima provident eligendi id voluptas ullam quidem nobis ab deserunt numquam veniam dolores labore.
-																  </div>
-																  <div class="modal-footer">
-																	<button type="button" class="btn btn-secondary profile-btn" data-bs-dismiss="modal" style="
-																	padding: 6px 9px;">Close</button>
-																	<button type="button" class="btn btn-primary profile-btn" style="
-																	padding: 6px 11px;">Understood</button>
-																  </div>
-																</div>
-															  </div>
-															</div>
-															<!-- <label class="asd" style="padding: 3px 1px;" type="button" > <i class="bi bi-cash dfg"></i></label> -->
-															<!-- <label class="asd" style="padding: 3px 1px;" type="button" > <i class="bi bi-file-pdf dfg"></i></label> -->
-															<label class="asd" style="padding: 3px 0px;" type="button" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" > <i class="bi bi-eye dfg"  ></i></label>
-															<!-- <label class="asd" style="padding: 3px 0px;" type="button" > <i class="bi bi-pencil dfg"></i></label> -->
-															<!-- <label class="asd" style="padding: 5px 1px;" type="button" > <i class="bi bi-arrow-left-right dfg"></i></label>													  </div> -->
-													</td>
-                                                   
+												<td><?php echo $row["complaint_no"]; ?></td>
+												<td><?php echo $row["user"]; ?>	</td>
+												<td><span class="text-nowrap"><?php echo $row["contact_no"]; ?></span></td>
+												<td><?php echo $row["date"]; ?></td>
+												<td><?php echo $row["time"]; ?></td>
+												<td><?php echo $row["status"]; ?></td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn bt" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-eye" ></i></a></td>
+												<td><a href="javascript:void(0)" class="btn bt" style="margin-left: -25px;"><i class="bi bi-pencil" ></i></a></td>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"  style="
+    background: transparent;
+    border: none;
+"><i class="bi bi-x"></i></button>
+      </div>
+      <div class="modal-body">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt amet non harum laboriosam molestias, porro adipisci dolorem culpa nostrum, totam excepturi sed mollitia ipsa quidem quo, quia eaque dicta quis!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn bt" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn bt">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 											</tr>
 											<?php
 												$i++;
 												}
 												?>
-											
-										
-                                   
+									
 										</tbody>
 									</table>
 								</div>
 							</div>
-							
+							<div id="Sold" class="tab-pane fade">
+								<div class="table-responsive">
+                                    <table id="example3" class="table card-table display dataTablesCard">
+										<thead>
+                                            <tr>
+                                                <th>Order ID</th>
+                                                <th>Date</th>
+                                                <th>Event Name</th>
+                                                <th>Customer </th>
+                                                <th>Location</th>
+                                                <th>Sold Ticket</th>
+                                                <th>Status</th>
+                                            
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+										<tbody>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Bella Simatupang</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">Envato Authors Meetup<br>2020</span></td>
+												<td>Elisabeth Queen</td>
+												<td>Medan, Indonesia</td>
+												<td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">Great Big Fireworks at <br> Newyork City</span></td>
+												<td>David Bekam</td>
+												<td>Sydney, Australia</td>
+												<td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">Charity Fun Games at <br> Lapangan Merdeka</span></td>
+												<td>Andrew Stevano</td>
+												<td>Jakarta, Indonesia</td>
+												<td>2 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-primary">REFUND</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">Indonesian Envato <br> Authors Fun Run </span></td>
+												<td>Cive Slauw</td>
+												<td>Penang, Malaysia</td>
+												<td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Eddy Cusuma</td>
+												<td>Medan, Indonesia</td>
+												<td>3 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Frank Azire</td>
+												<td>Bangkok, Thailand</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">REFUND</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Bella Simatupang</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Andrew Stevano</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Bella Simatupang</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Bella Simatupang</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Bella Simatupang</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Bella Simatupang</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Elisabeth Queen</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Andrew Stevano</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">view</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div id="Refunded" class="tab-pane fade">
+								<div class="table-responsive">
+                                    <table id="example4" class="table card-table display dataTablesCard">
+										<thead>
+                                            <tr>
+                                                <th>Order ID</th>
+                                                <th>Date</th>
+                                                <th>Event Name</th>
+                                                <th>Customer </th>
+                                                <th>Location</th>
+                                               
+                                                <th>action</th>
+                                            </tr>
+                                        </thead>
+										<tbody>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Andrew Stevano</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Bella Simatupang</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Bella Simatupang</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Bella Simatupang</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Bella Simatupang</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Bella Simatupang</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">Envato Authors Meetup<br>2020</span></td>
+												<td>Elisabeth Queen</td>
+												<td>Medan, Indonesia</td>
+												<td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$536,00</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">Great Big Fireworks at <br> Newyork City</span></td>
+												<td>David Bekam</td>
+												<td>Sydney, Australia</td>
+												<td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$65,22</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">Charity Fun Games at <br> Lapangan Merdeka</span></td>
+												<td>Andrew Stevano</td>
+												<td>Jakarta, Indonesia</td>
+												<td>2 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-primary">REFUND</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$124,55</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">Indonesian Envato <br> Authors Fun Run </span></td>
+												<td>Cive Slauw</td>
+												<td>Penang, Malaysia</td>
+												<td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$536,00</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Eddy Cusuma</td>
+												<td>Medan, Indonesia</td>
+												<td>3 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$44,00</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Frank Azire</td>
+												<td>Bangkok, Thailand</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">REFUND</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$51,50</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Bella Simatupang</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Elisabeth Queen</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Andrew Stevano</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div id="Canceled" class="tab-pane fade">
+								<div class="table-responsive">
+                                    <table id="example5" class="table card-table display dataTablesCard">
+										<thead>
+                                            <tr>
+                                                <th>Order ID</th>
+                                                <th>Date</th>
+                                                <th>Event Name</th>
+                                                <th>Customer </th>
+                                                <th>Location</th>
+                                                <th>Sold Ticket</th>
+                                                <th>Available</th>
+                                                <th>Refund</th>
+                                                <th>Total Revenue</th>
+                                            </tr>
+                                        </thead>
+										<tbody>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Bella Simatupang</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">Envato Authors Meetup<br>2020</span></td>
+												<td>Elisabeth Queen</td>
+												<td>Medan, Indonesia</td>
+												<td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$536,00</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">Great Big Fireworks at <br> Newyork City</span></td>
+												<td>David Bekam</td>
+												<td>Sydney, Australia</td>
+												<td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$65,22</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Andrew Stevano</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Bella Simatupang</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Bella Simatupang</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Bella Simatupang</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Bella Simatupang</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">Charity Fun Games at <br> Lapangan Merdeka</span></td>
+												<td>Andrew Stevano</td>
+												<td>Jakarta, Indonesia</td>
+												<td>2 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-primary">REFUND</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$124,55</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">Indonesian Envato <br> Authors Fun Run </span></td>
+												<td>Cive Slauw</td>
+												<td>Penang, Malaysia</td>
+												<td>4 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$536,00</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Eddy Cusuma</td>
+												<td>Medan, Indonesia</td>
+												<td>3 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$44,00</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Frank Azire</td>
+												<td>Bangkok, Thailand</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">REFUND</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$51,50</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Bella Simatupang</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Elisabeth Queen</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
+											</tr>
+											<tr>
+												<td>#0012451</td>
+												<td>04/08/2020<br>12:34 AM</td>
+												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td>Andrew Stevano</td>
+												<td>London, US</td>
+												<td>1 Pcs</td>
+												<td>567k left</td>
+												<td><strong class="text-black">NO</strong></td>
+												<td><a href="javascript:void(0)" class="btn btn-primary btn-sm light">$125,70</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -982,7 +1547,7 @@ if (mysqli_num_rows($result)>0){
         ***********************************-->
         <div class="footer">
             <div class="copyright">
-                <p>Copyright © 2020 | Designed &amp; Developed by <a href="https://tectignis.in/" target="_blank">Tectignis IT Solutions</a> </p>
+            <p>Copyright © Designed &amp; Developed by <a href="https://tectignis.in/" target="_blank">Tectignis IT Solutions</a> 2021</p>
             </div>
         </div>
         <!--**********************************
@@ -1055,7 +1620,7 @@ if (mysqli_num_rows($result)>0){
 			});
 		})(jQuery);
 	</script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
