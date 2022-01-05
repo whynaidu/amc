@@ -901,7 +901,7 @@ if (mysqli_num_rows($result)>0){
 						<div class="col-md-6 d-flex justify-content-end">
 					<li class="nav-item search2">
 						<div class="input-group ">
-							<input type="text" class="form-control" placeholder="Search here...">
+							<input type="text" class="form-control" placeholder="Search here..." style="background:white">
 							<div class="input-group-append">
 								<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
 							</div>

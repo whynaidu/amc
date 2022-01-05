@@ -844,7 +844,7 @@ if (mysqli_num_rows($result)>0){
 				<button class="btn_ad"  data-bs-toggle="modal" data-bs-target="#Modal">+ Add Complaints</button>
 			     <div class="col-md-6 d-flex justify-content-end" >
 				<li class="nav-item search">
-					<div class="input-group zx">
+					<div class="input-group ">
 						<input type="text" class="form-control" placeholder="Search here...">
 						<div class="input-group-append">
 							<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
