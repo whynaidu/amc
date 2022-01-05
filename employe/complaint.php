@@ -707,125 +707,101 @@ if (mysqli_num_rows($result)>0){
         <!--**********************************
             Sidebar start
         ***********************************-->
-          	<div class="deznav">
+          <div class="deznav">
             <div class="deznav-scroll">
 				<a href="javascript:void(0)" class="add-menu-sidebar" data-toggle="modal" data-target="#addOrderModalside" >+ New Event</a>
 				<ul class="metismenu" id="menu">
-                    <li><a class="" href="index.php" aria-expanded="false">
+                    <li><a class=" ai-icon" href="index.php" aria-expanded="false">
 							<i class="flaticon-381-networking"></i>
 							<span class="nav-text">Dashboard</span>
 						</a>
-                        <!-- <ul aria-expanded="false">
-							<li><a href="index.php">Dashboard</a></li>
-							<li><a href="event.php">Event</a></li>
-							<li><a href="event-detail.php">Event Detail</a></li>
-							<li><a href="customers.php">Customers</a></li>
-							<li><a href="analytics.php">Analytics</a></li>
-							<li><a href="reviews.php">Reviews</a></li>
-						</ul> -->
+                       
                     </li>
-                    <li><a class="" href="client.php" aria-expanded="false">
-						<i class="bi bi-people-fill"></i>
-							<span class="nav-text">Client</span>
+                    <li><a class="ai-icon" href="employee.php" aria-expanded="false">
+													<i class="bi bi-person-fill"></i>
+							<span class="nav-text">Employee</span>
 						</a>
-                        
+                      
                     </li>
-                    <li><a class="" href="quotation.php" aria-expanded="false">
-						<i class="bi bi-card-text"></i>
+         <li><a class="ai-icon" href="client.php" aria-expanded="false">
+														<i class="bi bi-people-fill"></i>
+							<span class="nav-text">Clients</span>
+						</a>
+
+                    <li><a class=" ai-icon" href="quotation.php" aria-expanded="false">
+							<i class="bi bi-card-text"></i>							
 							<span class="nav-text">Quotation</span>
 						</a>
-                        <!-- <ul aria-expanded="false">
-                            <li><a href="./chart-flot.php">Flot</a></li>
-                            <li><a href="./chart-morris.php">Morris</a></li>
-                            <li><a href="./chart-chartjs.php">Chartjs</a></li>
-                            <li><a href="./chart-chartist.php">Chartist</a></li>
-                            <li><a href="./chart-sparkline.php">Sparkline</a></li>
-                            <li><a href="./chart-peity.php">Peity</a></li>
-                        </ul> -->
+                  
                     </li>
-                    <li><a class="" href="sales.php" aria-expanded="false">
-						<i class="bi bi-bar-chart"></i>
-							<span class="nav-text">Sales</span>
+                    <li><a class=" ai-icon" href="purchase.php" aria-expanded="false">
+												<i class="bi bi-cash-stack"></i>
+							<span class="nav-text">Purchase</span>
 						</a>
-                        <!-- <ul aria-expanded="false">
-                            <li><a href="./ui-accordion.php">Accordion</a></li>
-                            <li><a href="./ui-alert.php">Alert</a></li>
-                            <li><a href="./ui-badge.php">Badge</a></li>
-                            <li><a href="./ui-button.php">Button</a></li>
-                            <li><a href="./ui-modal.php">Modal</a></li>
-                            <li><a href="./ui-button-group.php">Button Group</a></li>
-                            <li><a href="./ui-list-group.php">List Group</a></li>
-                            <li><a href="./ui-media-object.php">Media Object</a></li>
-                            <li><a href="./ui-card.php">Cards</a></li>
-                            <li><a href="./ui-carousel.php">Carousel</a></li>
-                            <li><a href="./ui-dropdown.php">Dropdown</a></li>
-                            <li><a href="./ui-popover.php">Popover</a></li>
-                            <li><a href="./ui-progressbar.php">Progressbar</a></li>
-                            <li><a href="./ui-tab.php">Tab</a></li>
-                            <li><a href="./ui-typography.php">Typography</a></li>
-                            <li><a href="./ui-pagination.php">Pagination</a></li>
-                            <li><a href="./ui-grid.php">Grid</a></li>
-
-                        </ul> -->
+                 
                     </li>
-                    <li><a class="" href="amc.php" aria-expanded="false">
-						<i class="bi bi-shield-minus"></i>
+                    <li><a class=" ai-icon" href="amc.php" aria-expanded="false">
+							<i class="bi bi-shield-minus"></i>
 							<span class="nav-text">AMC</span>
 						</a>
-                        <!-- <ul aria-expanded="false">
-                            <li><a href="./uc-select2.php">Select 2</a></li>
-                            <li><a href="./uc-nestable.php">Nestedable</a></li>
-                            <li><a href="./uc-noui-slider.php">Noui Slider</a></li>
-                            <li><a href="./uc-sweetalert.php">Sweet Alert</a></li>
-                            <li><a href="./uc-toastr.php">Toastr</a></li>
-                            <li><a href="./map-jqvmap.php">Jqv Map</a></li>
-                            <li><a href="./uc-lightgallery.php">Lightgallery</a></li>
-                        </ul> -->
+                  
                     </li>
                     <li><a href="complaint.php" class="ai-icon" aria-expanded="false">
 						<i class="bi bi-envelope-exclamation"></i>
 							<span class="nav-text">Complaint</span>
 						</a>
 					</li>
-                    <li><a class="" href="service.php" aria-expanded="false">
+                    <li><a class=" ai-icon" href="servicelist.php" aria-expanded="false">
 							<i class="flaticon-381-notepad"></i>
-							<span class="nav-text">Service</span>
+							<span class="nav-text">Services</span>
 						</a>
-                        
+                     
                     </li>
-                    <!-- <li><a class="" href="javascript:void()" aria-expanded="false">
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-network"></i>
 							<span class="nav-text">Report</span>
 						</a>
-                    <ul aria-expanded="false">
-                            <li><a href="table-bootstrap-basic.php">Bootstrap</a></li>
-                            <li><a href="table-datatable-basic.php">Datatable</a></li>
-                        </ul> -->
-                    <!-- </li> --> 
-                    <!-- <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-layer-1"></i>
-							<span class="nav-text">Pages</span>
+                        <ul aria-expanded="false">
+                            <li><a href="sales.php">Sales</a></li>
+                            <li><a href="complaintlist.php">Complaint List</a></li>
+                        </ul>
+                    </li>
+               
+                    <li><a class="ai-icon" href="catogries.php" aria-expanded="false">
+							<i class="bi bi-folder"></i>
+							<span class="nav-text">Catogries</span>
+						</a>
+						
+                    </li>
+               
+                    <li><a class=" ai-icon" href="discount.php" aria-expanded="false">
+					<i class="bi bi-percent"></i>
+							<span class="nav-text">Discount </span>
+						</a>
+                 
+                    </li>
+                    <li><a class=" ai-icon" href="emailsetup.php" aria-expanded="false">
+							<i class="bi bi-envelope-plus-fill"></i>
+							<span class="nav-text">Email Configurations </span>
+						</a>
+                 
+                    </li>
+					     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+						<i class="bi bi-gear-wide-connected"></i>
+							<span class="nav-text">Setting</span>
 						</a>
                         <ul aria-expanded="false">
-                            <li><a href="./page-register.php">Register</a></li>
-                            <li><a href="./page-login.php">Login</a></li>
-                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Error</a>
-                                <ul aria-expanded="false">
-                                    <li><a href="./page-error-400.php">Error 400</a></li>
-                                    <li><a href="./page-error-403.php">Error 403</a></li>
-                                    <li><a href="./page-error-404.php">Error 404</a></li>
-                                    <li><a href="./page-error-500.php">Error 500</a></li>
-                                    <li><a href="./page-error-503.php">Error 503</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./page-lock-screen.php">Lock Screen</a></li>
+                            <li><a href="companyprofile.php">Company profile</a></li>
+                            <li><a href="tax.php">Tax</a></li>
+                            <li><a href="historylog.php">History Log</a></li>
+                          
                         </ul>
-                    </li> -->
+                    </li>
+
                 </ul>
-				<!-- <div class="copyright">
-					<p><strong>Acara Ticketing Dashboard</strong> © 2021 All Rights Reserved</p>
-					<p>Made with <span class="heart"></span> by Tectignis IT Solutions</p>
-				</div> -->
+				<div class="copyright">
+			
+				</div>
 			</div>
         </div>
         <!--**********************************
