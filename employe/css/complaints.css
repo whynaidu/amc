@@ -8,71 +8,47 @@ form{
   background: rgb(255, 255, 255);
   border-radius: 30px;
   margin: 15px;
-  padding: 40px;  
+  padding: 40px;
 }
-.row{
-  width: 500px;
-  text-align: center;
-  }
-h2{
+h1{
   height: auto;
-  width: 500px;
-
-  /* text-align: center; */
-  margin-left: 400px;
+  width: 300px;
+  padding-top:40px;
+  margin-left: 150px;
 }
 div.complaint_form{
-  margin: 22px;
+  margin-top: 50px;
+  margin-left:40px;
+  margin-right:22px;
 }
-input[type=date]{
-  padding-left: 10px;
-  height: 80PX;
-  width: 260px;
-  margin-left: 20px;
-  margin-bottom: 15px;
-  /* margin-top: 15px; */
-  border-radius: 10px;
-  margin-left: 100px;
-  background: #f4f6fa;
-  border: transparent;
-}
-input[type=time]{
-  padding-left: 10px;
-  height: 80PX;
-  width: 260px;
-  margin-left: 200px;
-  /* margin-bottom: 15px; */
-  /* margin-top: 15px; */
-  border-radius: 10px;
-  background: #f4f6fa;
-  border: transparent;
-}
+
 input[type=text]{
   padding-left: 9px;
-  margin-left: 88px;
+  margin-left: 70px;
+  /* margin-top: -205px; */
   /* margin-bottom: 15px; */
   border-radius: 10px;
   background: #f4f6fa;
   border: transparent;
-  height: 80PX;
-  width: 260px;
+  height: 50PX;
+  width: 290px;
 }
 input[type=number]{
   padding-left: 9px;
-  margin-left: 115px;
+  margin-left: 95px;
   /* margin-bottom: 15px; */
   /* margin-top: 5px; */
   border-radius: 10px;
   background: #f4f6fa;
   border: transparent;
-  height: 80PX;
-  width: 260px;
+  height: 50PX;
+  width: 290px;
 }
 .comp_des{
   margin-left: 200px;
-  height:130px;
+  height:120px;
   resize: none;
-  width: 240px;
+  width: 290px;
   /* margin-bottom: 15px; */
   border-radius: 10px;
   margin-top: -80PX;
@@ -83,9 +59,9 @@ input[type=number]{
 
 }
 input[type=submit]{
-  margin-left: 400px;
-  height: 80PX;
-  width: 180px;
+  margin-left: 180PX;
+  height: 50PX;
+  width: 250px;
   /* margin-bottom: 15px; */
   /* margin-top: 15px; */
   color: white;
@@ -96,25 +72,27 @@ input[type=submit]{
 .form_select{
   margin-left: 70px;
   border-radius: 10px;
-  height: 80PX;
-  width: 290px;
+  height: 50PX;
+  /* width: 550px; */
   background: #f4f6fa;
-  
+ 
 }
+select{
+width: 290px;}
 
 p.lbl_des{
   height: 80PX;
-  width: 140px;
+  width: 160px;
   /* margin-top: -25px; */
   margin-left: 0px;
 }
 div.comp_dropdown{
   margin-left: 200px;
-  margin-top:-20px;
+  margin-top:-40px;
   /* margin-bottom: 15px;*/
 }
 
 div.form_group{
   height: auto;
   width: auto;
-}
+} 
