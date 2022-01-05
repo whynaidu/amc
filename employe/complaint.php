@@ -21,6 +21,7 @@ if (mysqli_num_rows($result)>0){
     <link href="./vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 	<link href="css/complaints.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/complait.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
@@ -839,9 +840,9 @@ if (mysqli_num_rows($result)>0){
             <!-- row -->
 			<div class="container-fluid">
 				<div class="row">
-			    <!-- <button class="btn_add" onclick="location.href='AddComplaint.php'">+ Add Complaints</button> -->
+			    <button class="btn_add" onclick="location.href='AddComplaint.php'">+ Add Complaints</button>
 				<button class="btn_ad" STYLE="height: 50px;width: 165px; border-radius: 44px; background: #510cc1;color: #fff;border-radius: 10px;text-align: centre; margin-left: 27px; border: transparent;"onclick="" data-bs-toggle="modal" data-bs-target="#Modal">+ Add Complaints</button>
-			     <div class="col-md-6 d-flex justify-content-end" style="left: 350px;">
+			     <div class="col-md-6 d-flex justify-content-end" >
 				<li class="nav-item search">
 					<div class="input-group zx">
 						<input type="text" class="form-control" placeholder="Search here...">
