@@ -1,3 +1,8 @@
+<?php
+include '../api.php';
+if (mysqli_num_rows($result)>0){
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -851,7 +856,7 @@
 			<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
 				  <div class="modal-content">
-					<h2>Complaint Form</h2>
+					<h1>Complaint Form</h1>
 			  <div class="complaint_form">
 					<div class="form_group">
 					  <label for="Complaint Type :"> Complaint Type :</label>
@@ -904,14 +909,17 @@
                                             </tr>
                                         </thead>
 										<tbody>
-											
+										<?php
+											$i=0;
+											while($row = mysqli_fetch_array($result)) {
+											?>
 											<tr>
-												    <td>113</td>
+												    <td><?php echo $row["complaint_no"]; ?></td>
                                                     <td>MAHESH. P. NIWATE</td>
                                                     <td>9001582656</td>
-                                                    <td>12/03/21</td>
-                                                    <td>1:30 PM</td>
-                                                    <td>OPEN</td>
+                                                    <td><?php echo $row["date"]; ?></td>
+                                                    <td><br><?php echo $row["time"]; ?></td>
+                                                    <td><?php echo $row["status"]; ?></td>
                                                     <td>SANKET CHINCHAWADE</td>
                                                     <td>
 														<div class="bt3"> <!-- Button trigger modal -->
@@ -947,6 +955,10 @@
 													</td>
                                                    
 											</tr>
+											<?php
+												$i++;
+												}
+												?>
 											
 										
                                    

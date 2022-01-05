@@ -4723,7 +4723,8 @@ a.close.disabled {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 120%;
+  height: 600px;
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;

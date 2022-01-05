@@ -1,3 +1,8 @@
+<?php
+include '../api.php';
+if (mysqli_num_rows($result)>0){
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +15,7 @@
 	<link rel="stylesheet" href="./vendor/chartist/css/chartist.min.css">
     <link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
 	<!-- Datatable -->
+	
     <link href="./vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -43,7 +49,8 @@
             <a href="index.php" class="brand-logo">
                 <!-- <img class="logo-abbr" src="./images/logo.png" alt=""> -->
                 <img class="logo-compact" src="./images/logo-text.png" alt="">
-				<img class="brand-title" src="./images/tectiginis.jpg"  style="width: 255px;  height: 100px;" alt="Tectignis IT Solutions">            </a>
+                    <img class="brand-title" src="/1637733681043_TM LOGO.jpg"  style="width: 255px;  height: 100px;" alt="Tectignis IT Solutions">
+            </a>
 
             <div class="nav-control">
                 <div class="hamburger">
@@ -837,107 +844,56 @@
 						</div>
 					</div>
 				</div>
-		<div class="row">
-					<div class="col-md-6">
-<a href="complaint-form.php">
-					<button class="favorite styled"
-         			type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    				+ Add New Complaints
-					</button>
-					</a>
-
-<!-- Modal -->
-<div class="modal fade text center" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content ">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Add Complaints</h5>
- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"  style="
-    background: transparent;
-    border: none;
-"><i class="bi bi-x"></i></button></div>
-      <div class="modal-body">
-	  <form >
-        <div class="container bord">
-			<div class="row">
-				<div class="col-6">
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Company Name</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-  </div>
-  <div class="mb-3 ">
-    <label for="exampleInputEmail1" class="form-label">Address</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-  </div>
-  <div class="mb-3 ">
-    <label for="exampleInputPassword1" class="form-label">State</label>
-    <input type="text" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="mb-3 ">
-    <label for="exampleInputPassword1" class="form-label">Pincode</label>
-    <input type="email" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Email</label>
-    <input type="number" class="form-control" id="exampleInputPassword1">
-  </div>
-  </div>
-				<div class="col-6">
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Customer Name</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-  </div>
-  <div class="mb-3 ">
-    <label for="exampleInputEmail1" class="form-label">City</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-  </div>
-  <div class="mb-3 ">
-    <label for="exampleInputPassword1" class="form-label">Country</label>
-    <input type="text" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="mb-3 ">
-    <label for="exampleInputPassword1" class="form-label">Phone</label>
-    <input type="email" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">GSTIN</label>
-    <input type="number" class="form-control" id="exampleInputPassword1">
-  </div>
-  </div>
-
-
- 
-
- </div>
-
-</form>
-      </div>
-      </div>
-	
-      <div class="modal-footer">
-        <button type="button" class="btn bt" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn bt">Save user</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-						</div>
-                        
-
-						<div class="col-md-6 d-flex justify-content-end">
-					<li class="nav-item search2">
-						<div class="input-group ">
-							<input type="text" class="form-control" placeholder="Search here...">
-							<div class="input-group-append">
-								<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
-							</div>
-							</div>
-						</div>
-					</li>
-
-					
+				<div class="row">
+			    <!-- <button class="btn_add" onclick="location.href='AddComplaint.php'">+ Add Complaints</button> -->
+				<button class="btn_ad" STYLE="height: 50px;width: 165px; border-radius: 44px; background: #510cc1;color: #fff;border-radius: 10px;text-align: centre; margin-left: 27px; border: transparent;"onclick="" data-bs-toggle="modal" data-bs-target="#Modal">+ Add Complaints</button>
+			        <div class="col-md-6 d-flex justify-content-end" style="left: 350px;">
+				        <li class="nav-item search">
+					      <div class="input-group zx">
+						       <input type="text" class="form-control" placeholder="Search here...">
+						       <div class="input-group-append">
+							       <span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
+						     </div>
+					     </div>
+				        </li>
+			     </div>
+		     </div>
+			 <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="Modal" aria-hidden="true">
+				<div class="modal-dialog">
+				  <div class="modal-content">
+					<h2>Complaint Form</h2>
+			  <div class="complaint_form">
+					<div class="form_group">
+					  <label for="Complaint Type :"> Complaint Type :</label>
+				     <div class="comp_dropdown">
+					     <select class="form_select default-select"id="type" name="type">
+				             <option value="Desktop" selected>Desktop</option>
+			                 <option value="Laptop">Laptop</option>
+			                 <option value="CCTV">CCTV</option> 
+                              <option value="Routers">Routers</option>
+						  </select>
+					  </div>
+					</div><br>
+					<div class="form_group">
+				       <p class="lbl_des">Description :</p>
+				        <textarea class="comp_des"  id="c_des" placeholder="Write here..." name="Description">
+						</textarea>
+					</div><br>
+					<div class="form_group">
+						<label for="Contact Name :">Contact Name :</label>
+					   <input type="text" placeholder="Name" id="c_name" name="c_name">
+					</div><br>
+					<div class="form_group">
+					   <label for="Contact No :"> Contact No :</label>
+					   <input type="number" id="c_number" name="c_number" placeholder="0123-456-789">
+					</div><br>
+					<div class="form_group">
+				      <input type="submit">
+					</div>
+			       </div>
+				  </div>
 				</div>
+			  </div>
 				<div class="row">
 					<div class="col-xl-12">
 						<div class="tab-content">
@@ -957,18 +913,20 @@
                                             </tr>
                                         </thead>
 										<tbody>
+										<?php
+											$i=0;
+											while($row = mysqli_fetch_array($result)) {
+											?>
 											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												<td>Bella Simatupang</td>
-												<td>London, US</td>
-												<td>1 Pcs</td>
+												<td><?php echo $row["complaint_no"]; ?></td>
+												<td><?php echo $row["user"]; ?>	</td>
+												<td><span class="text-nowrap"><?php echo $row["contact_no"]; ?></span></td>
+												<td><?php echo $row["date"]; ?></td>
+												<td><?php echo $row["time"]; ?></td>
+												<td><?php echo $row["status"]; ?></td>
 												<td><strong class="text-black">NO</strong></td>
 												<td><a href="javascript:void(0)" class="btn bt" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-eye" ></i></a></td>
-												<td><a href="javascript:void(0)" class="btn bt" style="
-    margin-left: -25px;
-"><i class="bi bi-pencil" ></i></a></td>
+												<td><a href="javascript:void(0)" class="btn bt" style="margin-left: -25px;"><i class="bi bi-pencil" ></i></a></td>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -992,79 +950,11 @@
   </div>
 </div>
 											</tr>
-											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">Envato Authors Meetup<br>2020</span></td>
-												<td>Elisabeth Queen</td>
-												<td>Medan, Indonesia</td>
-												<td>4 Pcs</td>
-												
-												<td><strong class="text-black">NO</strong></td>
-													<td><a href="javascript:void(0)" class="btn bt" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-eye" ></i></a></td>
-													<td><a href="javascript:void(0)" class="btn bt" style="
-    margin-left: -25px;
-"><i class="bi bi-pencil" ></i></a></td>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"  style="
-    background: transparent;
-    border: none;
-"><i class="bi bi-x"></i></button>
-      </div>
-      <div class="modal-body">
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt amet non harum laboriosam molestias, porro adipisci dolorem culpa nostrum, totam excepturi sed mollitia ipsa quidem quo, quia eaque dicta quis!
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn bt" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn bt">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-											</tr>
-											
-											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												<td>Bella Simatupang</td>
-												<td>London, US</td>
-												<td>1 Pcs</td>
-											
-												<td><strong class="text-black">NO</strong></td>
-													<td><a href="javascript:void(0)" class="btn bt" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-eye" ></i></a></td>
-													<td><a href="javascript:void(0)" class="btn bt" style="
-    margin-left: -25px;
-"><i class="bi bi-pencil"></i></a></td>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"  style="
-    background: transparent;
-    border: none;
-"><i class="bi bi-x"></i></button>
-      </div>
-      <div class="modal-body">
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt amet non harum laboriosam molestias, porro adipisci dolorem culpa nostrum, totam excepturi sed mollitia ipsa quidem quo, quia eaque dicta quis!
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn bt" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn bt">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-											</tr>
+											<?php
+												$i++;
+												}
+												?>
+									
 										</tbody>
 									</table>
 								</div>

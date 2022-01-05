@@ -1,3 +1,8 @@
+<?php
+include '../api.php';
+if (mysqli_num_rows($result)>0){
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -742,28 +747,29 @@
 			<div class="container-fluid">
 				<div class="row">
 			    <!-- <button class="btn_add" onclick="location.href='AddComplaint.php'">+ Add Complaints</button> -->
-				<button class="btn_add" onclick="" data-bs-toggle="modal" data-bs-target="#Modal">+ Add Complaints</button>
-			     <div class="col-md-6 d-flex justify-content-end" style="left: 350px;">
-				<li class="nav-item search">
-					<div class="input-group zx">
-						<input type="text" class="form-control" placeholder="Search here...">
-						<div class="input-group-append">
-							<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
-						</div>
-					</div>
-				</li>
-			</div>
-		</div>
+				 <button class="btn_add" onclick="" data-bs-toggle="modal" data-bs-target="#Modal">+ Add Complaints</button>
+			        <div class="col-md-6 d-flex justify-content-end" style="left: 350px;">
+				        <li class="nav-item search">
+					      <div class="input-group zx">
+						       <input type="text" class="form-control" placeholder="Search here...">
+						       <div class="input-group-append">
+							       <span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
+						     </div>
+					     </div>
+				        </li>
+			     </div>
+		     </div>
 			</div>
 			<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
 				  <div class="modal-content">
-					<h2>Complaint Form</h2>
+					  <form>
+					<h1>Complaint Form</h1>
 			  <div class="complaint_form">
 					<div class="form_group">
 					  <label for="Complaint Type :"> Complaint Type :</label>
 				     <div class="comp_dropdown">
-					     <select class="form_select default-select"id="type" name="type">
+					     <select class="form_select default-select select"id="type" name="type">
 				             <option value="Desktop" selected>Desktop</option>
 			                 <option value="Laptop">Laptop</option>
 			                 <option value="CCTV">CCTV</option> 
@@ -788,9 +794,29 @@
 				      <input type="submit">
 					</div>
 			       </div>
+                  </form>
 				  </div>
 				</div>
 			  </div>
+			   <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content-reason">
+		<div class="modal-header">
+		  <h2 class="modal-title" id="exampleModalLabel">Reason</h2>
+		 
+		</div>
+		<div class="modal-body">
+			<textarea name="w3review" rows="5" cols="52"style="border-radius:20px;">
+			</textarea>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn_1" data-bs-dismiss="modal" style="margin-right:100px;background: red;">Close</button>
+		  <button type="button" class="btn_1" style="margin-right:100px;">Submit</button>
+		</div>
+	  </div>
+	</div>
+  </div>
 			<!-- Add Order -->
 				<div class="modal fade" id="addOrderModalside">
 					<div class="modal-dialog" role="document">
@@ -831,25 +857,7 @@
 								<!-- Button trigger modal -->
 
   
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <h1 class="modal-title" id="exampleModalLabel">Reason</h1>
-		 
-		</div>
-		<div class="modal-body">
-			<textarea name="w3review" rows="4" cols="52"style="border-radius:20px;">
-			</textarea>
-		</div>
-		<div class="modal-footer">
-		  <button type="button" class="btn_1" data-bs-dismiss="modal" style="margin-right:100px;background: red;">Close</button>
-		  <button type="button" class="btn_1" style="margin-right:100px;">Submit</button>
-		</div>
-	  </div>
-	</div>
-  </div>
+ 
 								<div class="table-responsive">
                                     <table id="example2" class="table card-table display dataTablesCard">
 										<thead>
@@ -865,53 +873,27 @@
                                             </tr>
                                         </thead>
 										<tbody>
+										<?php
+											$i=0;
+											while($row = mysqli_fetch_array($result)) {
+											?>
 											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
+												<td><?php echo $row["complaint_no"]; ?></td>
+												<td><?php echo $row["date"]; ?><br><?php echo $row["time"]; ?></td>
+												<td><span class="text-nowrap"><?php echo $row["complaint_type"]; ?></span></td>
 												
-												<td><label class="btn_open"><p class="btn_status">Open</p></label></td>
+												<td><label class="btn_open"><p class="btn_status"><?php echo $row["status"]; ?></p></label></td>
 												<td><button  type="button" class="btn_1" data-bs-toggle="modal" data-bs-target="#exampleModal">Closed</button></td>
 												 <td><label class="btn_eye" type="button" > <i class="bi bi-eye"></label></i></td>
 												
 												<td><button class="btn_escalate" type="button" onclick="">Escalate</button></td>
+</tr>
+                                         <?php
+												$i++;
+												}
+												?>
 												
-											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												
-												<td><label class="btn_closed"><p class="btn_status">Closed</p></label></td>
-												<td><button  type="button" class="btn_1" data-bs-toggle="modal" data-bs-target="#exampleModal">Closed</button></td>
-						 <td><label class="btn_eye" type="button" > <i class="bi bi-eye"></label></i></td>
-												<!-- <td>London, US</td> -->
-				<td><button class="btn_escalate" type="button" onclick="">Escalate</button></td>
 											
-											</tr>
-											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												
-												<td><label class="btn_process"><p class="btn_status">Process</p></label></td>
-												 <td><button  type="button" class="btn_1" data-bs-toggle="modal" data-bs-target="#exampleModal">Closed</button></td>
-												 <!-- Button trigger modal -->
-                                              <td><label class="btn_eye" type="button" > <i class="bi bi-eye"></label></i></td>
-											
-												<td><button class="btn_escalate" type="button" onclick="">Escalate</button></td>
-												
-											</tr>
-											<tr>
-												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">The Story of Danau Toba<br> (Musical Drama)</span></td>
-												<!-- <td>Bella Simatupang</td> -->
-												<td><label class="btn_assign"><p class="btn_status">Asign</p></label></td>
-												<td><button  type="button" class="btn_1" data-bs-toggle="modal" data-bs-target="#exampleModal">Closed</button></td>
-												 <td><label class="btn_eye" type="button" > <i class="bi bi-eye"></label></i></td>
-												<!-- <td>London, US</td> -->
-												<td><button class="btn_escalate" type="button" onclick="">Escalate</button></td>
-											</tr>
 											
 										</tbody>
 									</table>

@@ -3022,7 +3022,9 @@ input[type="button"].btn-block {
   .input-group > .form-control:not(:last-child),
   .input-group > .custom-select:not(:last-child) {
     border-top-right-radius: 0;
-    border-bottom-right-radius: 0; }
+    border-bottom-right-radius: 0;
+  height: 42px;
+background:#ffff }
   .input-group > .form-control:not(:first-child),
   .input-group > .custom-select:not(:first-child) {
     border-top-left-radius: 0;
@@ -4725,14 +4727,27 @@ a.close.disabled {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 120%;
+  height:600px;
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   outline: 0; }
-
+.modal-content-reason{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height:350px;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.4rem;
+  outline: 0;
+}
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -21408,7 +21423,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     transition-duration: 0.05s; }
 
 .mail-list a {
-  vertical-align: middle;
+  vertical-align:middle;
   padding: 0.625rem 0.9375rem;
   display: block;
   background: transparent;
@@ -27084,7 +27099,7 @@ code {
       position: relative; }
   .tdl-holder input[type=text] {
     background-color: #fff;
-    height: 50px;
+    height: 42px;
     margin-top: 29px;
     border-radius: 3px; }
     .tdl-holder input[type=text]::placeholder {
@@ -31236,14 +31251,16 @@ div.content{
 
 
 
-h2{
+h1{
   height: auto;
   width: 300px;
-  padding-top:30px;
+  padding-top:40px;
   margin-left: 150px;
 }
 div.complaint_form{
-  margin: 22px;
+  margin-top: 50px;
+  margin-left:40px;
+  margin-right:22px;
 }
 
 input[type=text]{
@@ -31254,8 +31271,8 @@ input[type=text]{
   border-radius: 10px;
   background: #f4f6fa;
   border: transparent;
-  height: 40px;
-  width: 230px;
+  height: 50PX;
+  width: 290px;
 }
 input[type=number]{
   padding-left: 9px;
@@ -31265,17 +31282,17 @@ input[type=number]{
   border-radius: 10px;
   background: #f4f6fa;
   border: transparent;
-  height: 40px;
-  width: 230px;
+  height: 50PX;
+  width: 290px;
 }
 .comp_des{
   margin-left: 200px;
-  height:100px;
+  height:120px;
   resize: none;
-  width: 230px;
+  width: 290px;
   /* margin-bottom: 15px; */
   border-radius: 10px;
-  margin-top: -50px;
+  margin-top: -80PX;
   background: #f4f6fa;
   border: transparent;
   padding-left: 10px;
@@ -31283,9 +31300,9 @@ input[type=number]{
 
 }
 input[type=submit]{
-  margin-left: 150px;
-  height: 40px;
-  width: 170px;
+  margin-left: 180PX;
+  height: 50PX;
+  width: 250px;
   /* margin-bottom: 15px; */
   /* margin-top: 15px; */
   color: white;
@@ -31296,15 +31313,17 @@ input[type=submit]{
 .form_select{
   margin-left: 70px;
   border-radius: 10px;
-  height: 40px;
-  width: 280px;
+  height: 50PX;
+  /* width: 550px; */
   background: #f4f6fa;
-  
+ 
 }
+select{
+width: 290px;}
 
 p.lbl_des{
-  height: 40px;
-  width: 112px;
+  height: 80PX;
+  width: 160px;
   /* margin-top: -25px; */
   margin-left: 0px;
 }
